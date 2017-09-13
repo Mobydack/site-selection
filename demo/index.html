@@ -1,0 +1,649 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <title>Выбор сайта в дашбоарде uKit</title>
+  <link rel="stylesheet" href="styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="dash">
+    <div class="bg">
+      <div class="bg-header">
+      </div>
+      <div class="bg-header-main">
+      </div>
+      <div class="bg-banner">
+      </div>
+      <div class="bg-content">
+      </div>
+    </div>
+    <div class="center">
+      <button type="submit" class="open-modal"></button>
+      <button type="submit" class="create-new-site"></button>
+    </div>
+    <div class="bg">
+        <div class="bg-header">
+        </div>
+        <div class="bg-header-main">
+        </div>
+        <div class="bg-banner">
+        </div>
+        <div class="bg-content">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div class="modal">
+  <header>
+    <div class="search-create">
+      <input type="text" class="header-search-input" placeholder="Поиск по названию">
+      <div class="create-site">
+        <a href="ukit.com/convert">Сайт из Фейсбука</a>
+        <a href="ukit.com/convert-vk">Сайт из ВКонтакте</a>
+        <img src="img-question.png">
+        <button type="submit" class="create-new-site-green">Создать сайт</button>
+      </div>
+      <button type="submit" class="close-modal"></button>
+    </div>
+    <div class="sort-filter">
+      <div class="sorting">
+        <span>Сортировать:</span>
+        <button type="submit" class="sort-left">по дате изменения</button>
+        <button type="submit" class="sort-center">по дате создания</button>
+        <button type="submit" class="sort-right">по названию</button>
+      </div>
+      <div class="filter">
+        <span>Показывать</span>
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+    </div>
+
+
+  </header>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+          <div class="preview-overlay">
+              <span>Выбрать</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <div class="menu-wrapper">
+            <button type="submit" class="button-detail"></button>
+            <div class="menu">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <img class="favico" src="favicon.ico">
+              <h2>Студия домашней кухни</h2>
+            </div>
+            <div class="info-site-url">
+              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+              <span class="link-button">Выбрать домен</span>
+            </div>
+            <div class="info-site-tariff">
+              <span class="info-site-tariff-name">Премиум</span>
+              <span class="info-text">— Осталось 14 дней</span>
+              <span class="link-button">Включить автоплатеж</span>
+            </div>
+            <div class="info-site-publish">
+              <img src="img-check.png">
+              <span class="info-text">Опубликован</span>
+            </div>
+          </div>
+          <button type="submit" class="button-detail"></button>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Если сайт один</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Если сайта 2</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Если сайта 3</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Если сайта 4</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $('.open-modal').click(function() {
+    $('.modal').toggleClass('active')
+  })
+
+  $('.close-modal').click(function() {
+    $('.modal').toggleClass('active')
+  })
+
+  $('.button-detail').click(function() {
+    $(this).siblings('.menu').toggleClass('active')
+  })
+
+</script>
+
+</body>
+</html>
