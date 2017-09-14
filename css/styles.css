@@ -531,6 +531,9 @@ margin-right: 6px;
   color: #3B7694;
 }
 
+.info-site-name {
+  overflow-x: hidden;
+}
 
 .info-site-name > h2 {
   font-family: avenir-bold;
@@ -618,7 +621,7 @@ letter-spacing: 0;
   flex: 0 1 auto;
   align-self: flex-end;
 
-  border-radius: 8px;
+  border-radius: 16px;
 
   width: 32px;
   height: 32px;
@@ -706,7 +709,7 @@ letter-spacing: 0;
 
   pointer-events: none;
 
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
 
 }
 
