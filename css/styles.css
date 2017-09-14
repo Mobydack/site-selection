@@ -13,6 +13,12 @@
     src: url(../fonts/AvenirNextCyr-Regular.otf); /* Путь к файлу со шрифтом */
    }
 
+   @font-face {
+     font-family: avenir-demi;
+     src: url(../fonts/AvenirNextCyr-Demi.otf); /* Путь к файлу со шрифтом */
+    }
+
+
 body {
   margin: auto;
   background-color: #E7EBEE;
@@ -136,6 +142,47 @@ button {
   top: 12px;
 }
 
+.button-white {
+  color: #fff;
+}
+
+.open-modal-new {
+      background: #1C2A33;
+      border: none;
+      color: #5D8397 !important;
+      cursor: pointer;
+      display: inline-block;
+      font-family: avenir-regular;
+      font-size: 14px;
+      font-weight: normal;
+      height: 36px;
+      line-height: 33px;
+      margin: 0 10px;
+      outline: none;
+      padding: 2px 18px 2px;
+      text-align: center;
+      text-decoration: none !important;
+      vertical-align: middle;
+      white-space: nowrap;
+      letter-spacing: 0.5px;
+      -webkit-transition-property: background, color, opacity, box-shadow;
+      transition-property: background, color, opacity, box-shadow;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+      transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: relative;
+      left: 150px;
+      top: 12px;
+}
+
+
 .close-modal {
   background:url(../src/img-close-modal.png) no-repeat;
   cursor:pointer;
@@ -148,6 +195,33 @@ button {
   padding: 0px;
 }
 
+.menu-text {
+  font-family: avenir-regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  list-style-type:none;
+  margin:0;
+  padding: 0;
+  line-height: 31px;
+  margin-top: 16px;
+  margin-right: 32px;
+  margin-bottom: 19px;
+  margin-left: 32px;
+  min-width: 160px;
+}
+
+.menu-text li{
+  cursor: pointer;
+}
+
+.menu-publish {
+  color: #FFCC00;
+}
+
+.menu-delete {
+  color: #C2445C;
+}
 
 button:focus {outline:0;}
 
@@ -155,8 +229,8 @@ button:focus {outline:0;}
   background:url(../src/button-create-new--hover.png) no-repeat;
 }
 
-.open-modal:hover {
-  background:url(../src/button-choose-site--hover.png) no-repeat;
+.open-modal-new:hover {
+  background: #2B404F;
 }
 
 .create-new-site {
@@ -267,11 +341,49 @@ color: #FFFFFF;
 letter-spacing: 0;
 }
 
+.button-arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.button-back {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  font-family: avenir-demi;
+  font-size: 10px;
+  color: #47B04B;
+  letter-spacing: 1.25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 18px;
+  margin-top: 12px;
+}
+
+.button-back::before {
+  content: "";
+
+  position: absolute;
+  left: 22px;
+  top: 22px;
+
+  width: 16px;
+  height:16px;
+
+  background: url(../src/img-arrow-small.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+}
+
+
+
 .filter span {
 font-family: avenir-regular;
 font-size: 14px;
 color: #FFFFFF;
 letter-spacing: 0;
+margin-right: 6px;
 }
 
 .filter select {
@@ -295,6 +407,19 @@ letter-spacing: 0;
   appearance: none;
   color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 0 #FFFFFF;
+}
+
+.filter-select::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height:16px;
+  background: url(../src/img-arrow-small-select.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
 }
 
 .create-new-site-green {
@@ -585,6 +710,13 @@ letter-spacing: 0;
 
 }
 
+.preview-overlay span{
+  font-family: avenir-medium;
+  font-size: 16px;
+  color: #1C2A33;
+  letter-spacing: 0;
+}
+
 .menu-wrapper {
   order: 0;
   flex: 0 1 auto;
@@ -600,15 +732,15 @@ letter-spacing: 0;
   position: absolute;
   top: 16px;
   left: 32px;
-  width: 100px;
-  height: 100px;
 
   transform: translateY(-50%);
 
-    z-index: 10;
+  z-index: 10;
 
   opacity: 0;
   pointer-events: none;
+
+  transition: 0.2s ease-in-out;
 }
 
 .menu.active {
