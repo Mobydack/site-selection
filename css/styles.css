@@ -17,6 +17,22 @@
      font-family: avenir-demi;
      src: url(../fonts/AvenirNextCyr-Demi.otf); /* Путь к файлу со шрифтом */
     }
+.scroll-down-button:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: opacity 0.2s cubic-bezier(0.0, 0.0, 0.2, 1), transform 0.2s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.scroll-down-button {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.2s cubic-bezier(0.0, 0.0, 0.2, 1), transform 0.2s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.scroll-down-button:active {
+  opacity: 0.94;
+  cursor: pointer;
+}
 
 
 body {
@@ -35,8 +51,10 @@ body {
   top:0;
   background-color: #263845;
   width: 100%;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateX(-40px);
+  /*transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;*/
+  transition: opacity 0.3s cubic-bezier(0.0, 0.0, 0.2, 1), transform 0.3s cubic-bezier(0.0, 0.0, 0.2, 1);
+
+  transform: translateY(-40px);
 }
 
 .modal.active {
@@ -290,6 +308,7 @@ button:focus {outline:0;}
   align-items: flex-start;
   padding-left: 24px;
   padding-right: 24px;
+  min-height: calc(100vh - 125px);
 }
 
 .stroke {
@@ -309,6 +328,9 @@ button:focus {outline:0;}
   top: 1px;
   width: 16px;
   height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 8px;
 }
 
 .create-site {
@@ -543,6 +565,11 @@ margin-right: 6px;
   line-height: 18px;
   display: inline-block;
   margin: 0px 0px 8px 2px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
+  vertical-align: middle;
 }
 
 .info-site-url {
@@ -653,7 +680,7 @@ letter-spacing: 0;
   width: 100%;
   padding: 31.803%;
 
-  border-radius: 14px 14px 0 0;
+  border-radius: 3px 3px 0 0;
 
   cursor: pointer;
 
@@ -661,6 +688,25 @@ letter-spacing: 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.second-site {
+  background: url(../src/medium5.1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.third-site {
+  background: url(../src/medium3.1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.forth-site {
+  background: url(../src/medium6.1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 .preview:before {
   content: "";
