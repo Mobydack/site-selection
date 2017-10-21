@@ -60,11 +60,13 @@
     </div>
     <div class="center">
       <div class="open-modal-new">
-        <span>hgs29sfa.ulcraft.com</span>
-        <span class="button-white">Выбрать из 8</button>
+        <span>Мои сайты</span>
+<!--         <span class="button-white">Выбрать из 8</button> -->
       </div>
 
-      <button type="submit" class="create-new-site"></button>
+      <a class="create-new-site" href="http://ukit.com/neowizard">
+      </a>
+      <a class="current-site" href="http://hgs29sfa.ulcraft.com">hgs29sfa.ulcraft.com</a>
     </div>
     <div class="bg">
         <div class="bg-header">
@@ -82,37 +84,34 @@
 
 <div class="modal">
   <header>
-    <div class="search-create">
-      <a class="button-back" href="#">
-        <span>Назад</span>
-      </a>
-      <input type="text" class="header-search-input" placeholder="Поиск по названию">
-      <div class="create-site">
-        <a href="ukit.com/convert">Сайт из Фейсбука</a>
-        <a href="ukit.com/convert-vk">Сайт из ВКонтакте</a>
-        <img src="src/img-question.png">
-        <button type="submit" class="create-new-site-green">Создать сайт</button>
+    <div class="row-content">
+      <div class="sort-filter">
+        <div class="filter-select-wrapper">
+          <select class="filter-select">
+            <option value="title">Фильтр</option>
+            <option value="all">Все</option>
+            <option value="published">Опубликованные</option>
+            <option value="unpublished">Неопубликованные</option>
+            <option value="trial">Триал</option>
+            <option value="payment">Платные тарифы</option>
+          </select>
+        </div>
+        <div class="filter-select-wrapper">
+          <select class="filter-select">
+            <option value="title">Сортировка</option>
+            <option value="volvo">Последние изменения</option>
+            <option value="saab">Самые новые</option>
+            <option value="mercedes">Самые старые</option>
+            <option value="audi">По алфавиту А-Я</option>
+            <option value="audi">По алфавиту Я-А</option>
+          </select>
+        </div>
       </div>
-      <button type="submit" class="close-modal"></button>
-    </div>
-    <div class="sort-filter">
-      <div class="sorting">
-        <span>Сортировать:</span>
-        <button type="submit" class="sort-left">по дате изменения</button>
-        <button type="submit" class="sort-center">по дате создания</button>
-        <button type="submit" class="sort-right">по названию</button>
-      </div>
-      <div class="filter">
-        <span>Показывать:</span>
-        <select class="filter-select">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
+      <div class="view-select">
+        <img src="src/icn-show-blocks-active.png">
+        <img src="src/icn-show-list-normal.png">
       </div>
     </div>
-
 
   </header>
   <div class="content">
@@ -126,38 +125,29 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span class="info-text">Осталось 14 дней</span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
@@ -675,9 +665,10 @@
     </div>
   </div> -->
 </div>
-<img class="scroll-down-button" src="src/default-scrolldown-button.svg">
 <script>
-  $('.open-modal-new').click(function() {
+  $('.open-modal-new').click(function(event) {
+    var $currentTarget=$(event.currentTarget);
+    $currentTarget.toggleClass('selected'); 
     $('.modal').toggleClass('active')
   })
 
