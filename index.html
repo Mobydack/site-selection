@@ -59,14 +59,14 @@
       </div>
     </div>
     <div class="center">
-      <div class="open-modal-new">
+      <div class="open-modal-new" title="Выбрать из моих сайтов">
         <span>Мои сайты</span>
 <!--         <span class="button-white">Выбрать из 8</button> -->
       </div>
 
-      <a class="create-new-site" href="http://ukit.com/neowizard">
+      <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard">
       </a>
-      <a class="current-site" href="http://hgs29sfa.ulcraft.com">hgs29sfa.ulcraft.com</a>
+      <a class="current-site" href="http://home-kitchen.ru">home-kitchen.ru</a>
     </div>
     <div class="bg">
         <div class="bg-header">
@@ -88,22 +88,19 @@
       <div class="sort-filter">
         <div class="filter-select-wrapper">
           <select class="filter-select">
-            <option value="title">Фильтр</option>
-            <option value="all">Все</option>
+            <option value="all">Все сайты</option>
             <option value="published">Опубликованные</option>
             <option value="unpublished">Неопубликованные</option>
-            <option value="trial">Триал</option>
-            <option value="payment">Платные тарифы</option>
+            <option value="trial">С тарифом «Триал»</option>
+            <option value="payment">С платным тарифом</option>
           </select>
         </div>
         <div class="filter-select-wrapper">
           <select class="filter-select">
-            <option value="title">Сортировка</option>
-            <option value="volvo">Последние изменения</option>
-            <option value="saab">Самые новые</option>
-            <option value="mercedes">Самые старые</option>
-            <option value="audi">По алфавиту А-Я</option>
-            <option value="audi">По алфавиту Я-А</option>
+            <option value="new">Сначала новые</option>
+            <option value="old">Сначала старые</option>
+            <option value="a-z">По алфавиту А-Я</option>
+            <option value="z-a">По алфавиту Я-А</option>
           </select>
         </div>
       </div>
@@ -116,6 +113,25 @@
   </header>
   <div class="content">
     <div class="stroke">
+      <div class="tile create-new">
+        <div class="zero-site">
+          <div class="preview-overlay">
+              <span>Выбрать</span>
+          </div>
+        </div>
+        <div class="ukit-alt">
+          <div class="ukit-alt-title">
+              <span class="ukit-alt-title-description">Сайт из готовой страницы в соцсети</span>
+              <img src="src/img-question-mark.png">
+          </div>
+          <div class="ukit-alt-buttons">
+            <div class="ukit-alt-buttons-fb2ukit">
+            </div>
+            <div class="ukit-alt-buttons-vk2ukit">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="tile">
         <div class="preview first-site">
           <div class="preview-overlay">
@@ -131,7 +147,7 @@
                 <div class="info-site-url-publish-wrapper">
                   <div class="info-site-url">
                     <img src="src/img-check.png">
-                    <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован 28.08.2017</span>
@@ -143,7 +159,9 @@
                   <span class="info-site-tariff-name">Премиум</span>
                 </div>
                 <div class="info-site-tariff-counter">
-                  <span class="info-text">Осталось 14 дней</span>
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
                 </div>
                 </div>
               </div>
@@ -159,37 +177,31 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
-              <h2>Термit — отопление, водоснабжение</h2>
+              <h2>Модель Алисия Ансем</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://termit-krasnodar.ru">termit-krasnodar.ru</a>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">alisia-ansem.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-trial.png">
+                  <span class="info-site-tariff-name">Триал</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
@@ -201,38 +213,31 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
-              <h2>Магнитная, маркерная, грифельная доска</h2>
+              <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://marker-coating.usluga.me">marker-coating.usluga.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
@@ -244,41 +249,35 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
-              <h2>Бабушкин хостел</h2>
+              <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sбабушкинхостел.рф">бабушкинхостел.рф</a>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
-        <div class="preview">
+        <div class="preview fifth-site">
           <div class="preview-overlay">
               <span>Выбрать</span>
           </div>
@@ -286,42 +285,35 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
-        <div class="preview">
+        <div class="preview sixth-site">
           <div class="preview-overlay">
               <span>Выбрать</span>
           </div>
@@ -329,42 +321,35 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
-        <div class="preview">
+        <div class="preview seventh-site">
           <div class="preview-overlay">
               <span>Выбрать</span>
           </div>
@@ -372,42 +357,35 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
-        <div class="preview">
+        <div class="preview eigth-site">
           <div class="preview-overlay">
               <span>Выбрать</span>
           </div>
@@ -415,42 +393,35 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
-        <div class="preview">
+        <div class="preview ninth-site">
           <div class="preview-overlay">
               <span>Выбрать</span>
           </div>
@@ -458,42 +429,35 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
-        <div class="preview">
+        <div class="preview tenth-site">
           <div class="preview-overlay">
               <span>Выбрать</span>
           </div>
@@ -501,42 +465,35 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
       <div class="tile">
-        <div class="preview">
+        <div class="preview eleventh-site">
           <div class="preview-overlay">
               <span>Выбрать</span>
           </div>
@@ -544,38 +501,31 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <img class="favico" src="src/favicon.ico">
               <h2>Студия домашней кухни</h2>
             </div>
-            <div class="info-site-url">
-              <a href="https://sxcy145gx.ukit.me">sxcy145gx.ukit.me</a>
-              <span class="link-button">Выбрать домен</span>
-            </div>
-            <div class="info-site-tariff">
-              <span class="info-site-tariff-name">Премиум</span>
-              <span class="info-text">— Осталось 14 дней</span>
-              <span class="link-button">Выбрать тариф</span>
-            </div>
-            <div class="info-site-publish">
-              <img src="src/img-check.png">
-              <span class="info-text">Опубликован</span>
-            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.08.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
           </div>
-          <div class="menu-wrapper">
-            <button type="submit" class="button-detail"></button>
-            <div class="menu">
-              <ul class="menu-text">
-                <li>Выбрать</li>
-                <li>Редактировать</li>
-                <li class="menu-publish">Опубликовать</li>
-                <li>Привязать домен</li>
-                <li>Дублировать</li>
-                <li>Скрыть от публикации</li>
-                <li class="menu-delete">Удалить</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
