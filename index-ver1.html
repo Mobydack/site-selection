@@ -1,0 +1,663 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <title>Выбор сайта в дашбоарде uKit</title>
+  <link rel="stylesheet" href="css/styles-ver1.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+   <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter46321338 = new Ya.Metrika({
+                      id:46321338,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/46321338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <div class="dash">
+    <div class="bg">
+      <div class="bg-header">
+      </div>
+      <div class="bg-header-main">
+      </div>
+      <div class="bg-banner">
+      </div>
+      <div class="bg-content">
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="top">
+        <div class="open-modal-new" title="Выбрать сайт из моих сайтов">
+          <span>Мои сайты</span>
+  <!--         <span class="button-white">Выбрать сайт из 8</button> -->
+        </div>
+
+        <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard">
+        </a>
+        <a class="current-site" href="http://home-kitchen.ru">home-kitchen.ru</a>
+      </div>
+    </div>
+    <div class="bg">
+        <div class="bg-header">
+        </div>
+        <div class="bg-header-main">
+        </div>
+        <div class="bg-banner">
+        </div>
+        <div class="bg-content">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div class="modal">
+  <header>
+    <div class="row-content">
+      <div class="sort-filter">
+        <div class="filter-select-wrapper">
+          <select class="filter-select">
+            <option value="all">Все сайты</option>
+            <option value="published">Опубликованные</option>
+            <option value="unpublished">Неопубликованные</option>
+            <option value="trial">С тарифом «Триал»</option>
+            <option value="payment">С платным тарифом</option>
+          </select>
+        </div>
+        <div class="filter-select-wrapper">
+          <select class="filter-select">
+            <option value="new">Сначала новые</option>
+            <option value="old">Сначала старые</option>
+            <option value="a-z">По алфавиту А-Я</option>
+            <option value="z-a">По алфавиту Я-А</option>
+          </select>
+        </div>
+      </div>
+      <div class="view-select">
+        <img src="src/icn-show-blocks-active.png">
+        <img src="src/icn-show-list-normal.png">
+      </div>
+    </div>
+
+  </header>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile create-new">
+        <a class="zero-site" href="http://ukit.com/neowizard">
+          <img src="src/button-create.png" alt="">
+          <span>Создать новый сайт</span>
+        </a>
+        <div class="ukit-alt">
+          <div class="ukit-alt-title-tooltip">
+          </div>
+          <div class="ukit-alt-title">
+              <span class="ukit-alt-title-description" title="Данные копируются из страницы, из них создается сайт.  Это бесплатно и безопасно для вашей страницы в соцсети" >Сайт из готовой страницы в соцсети</span>
+              <img src="src/img-question-mark.png">
+          </div>
+          <div class="ukit-alt-buttons">
+            <a href="https://ukit.com/ru/lp/convert" class="ukit-alt-buttons-fb2ukit">
+              <img src="src/btn-fb.png" alt="">
+              <span>Создать сайт</span>
+            </a>
+            <a href="https://ukit.com/ru/lp/convert-vk" class="ukit-alt-buttons-vk2ukit">
+              <img src="src/btn-vk.png" alt="">
+              <span>Создать сайт</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview first-site selected-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Студия домашней кухни</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 28.8.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs">Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview second-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Модель Алисия Ансем</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://home-kitchen.ru">alisia-ansem.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован 10.9.2017</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico trial-ico" src="src/img-trial.png">
+                  <span class="info-site-tariff-name trial">Триал</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> Осталось 14 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview third-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Маникюрный салон «Аннелис»</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <!-- <img src="src/img-check.png"> -->
+                    <a class="system-domain-name" href="https://1wvcqkq24.urest.org">1wvcqkq24.urest.org</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован сегодня в 9:52</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico trial-ico" src="src/img-trial.png">
+                  <span class="info-site-tariff-name trial">Триал</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs">Осталось 7 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview forth-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Сообщество hand-made мастеров Creators</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://home-kitchen.ru">hand-made-creators.com</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован сегодня в 11:23</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> </a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview fifth-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Флористический дизайн от «Botanique»</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://home-kitchen.ru">ботаник-дизайн.рф</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Не опубликован</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> </a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview sixth-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Йога-центр «Намасте»</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://home-kitchen.ru">yoga-namaste.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован вчера в 14:20</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs"> </a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview seventh-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>IT Марафон «Хакслет»</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <!-- <img src="src/img-check.png"> -->
+                    <a class="system-domain-name" href="https://home-kitchen.ru">6acx2uyo73rb.ukit.me</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Не опубликован</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico trial-ico" src="src/img-trial.png">
+                  <span class="info-site-tariff-name trial">Триал</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs">Осталось 12 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview eigth-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Приложение для путешественников</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://home-kitchen.ru">waytodo-app.com</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Не опубликован</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico trial-ico" src="src/img-trial.png">
+                  <span class="info-site-tariff-name trial">Триал</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs">Осталось 9 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview ninth-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Галерея цветов «Флорист»</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://home-kitchen.ru">галерея-флорист.рф</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Опубликован вчера в 9:22</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name">Премиум</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs">Осталось 10 дней</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview expired tenth-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Приложение для меломанов «Music Station»</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <!-- <img src="src/img-check.png"> -->
+                    <a class="system-domain-name" href="https://1u7imgy48.ukit.me">1u7imgy48.ukit.me</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Не опубликован</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico trial-ico" src="src/img-trial.png">
+                  <span class="info-site-tariff-name tariff-expired trial">Триал закончился</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs">Выберите тариф</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview expired eleventh-site">
+          <div class="preview-overlay">
+              <span>Выбрать сайт</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-data">
+            <div class="info-site-name">
+              <h2>Барбершоп «Hairdresser»</h2>
+            </div>
+              <div class="info-site-data-wrapper">
+                <div class="info-site-url-publish-wrapper">
+                  <div class="info-site-url">
+                    <img src="src/img-check.png">
+                    <a class="custom-domain-name" href="https://hairdresser.ru">hairdresser.ru</a>
+                  </div>
+                  <div class="info-site-publish">
+                    <span class="info-text">Не опубликован</span>
+                  </div>
+                </div>
+                <div class="info-site-tariff-tariff-counter-wrapper">
+                <div class="info-site-tariff">
+                  <img class="favico" src="src/img-premium.png">
+                  <span class="info-site-tariff-name tariff-expired">Премиум закончился</span>
+                </div>
+                <div class="info-site-tariff-counter">
+                  <span>
+                    <a class="info-text link" href="https://ukit.com/sites/url/sxcy145gx/dashBoard/billing/tariffs">Выберите тариф</a>
+                  </span>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+  <h1>Если сайт один</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Если сайта 2</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Если сайта 3</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1>Если сайта 4</h1>
+  <div class="content">
+    <div class="stroke">
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+      <div class="tile">
+        <div class="preview">
+        </div>
+        <div class="info">
+        </div>
+      </div>
+    </div>
+  </div> -->
+</div>
+<script>
+  $('.open-modal-new').click(function(event) {
+    var $currentTarget=$(event.currentTarget);
+    $currentTarget.toggleClass('selected');
+    $('.modal').toggleClass('active')
+  })
+
+  $('.close-modal').click(function() {
+    $('.modal').toggleClass('active')
+  })
+
+  $('.button-back').click(function() {
+    $('.modal').toggleClass('active')
+  })
+
+  $('.ukit-alt-title').hover(function() {
+    $(this).siblings('.ukit-alt-title-tooltip').toggleClass('active')
+  })
+
+  $('.button-detail').click(function() {
+    $(this).siblings('.menu').toggleClass('active')
+  })
+
+  $('body').click(function(e){
+    if($(e.target).attr('class') != 'button-detail') {
+      $('.menu').removeClass('active');
+    }
+  });
+
+  // if (!container.is(e.target) && container.has(e.target).length === 0)
+  //   {
+  //       container.hide();
+  //   }
+
+</script>
+
+</body>
+</html>
