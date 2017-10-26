@@ -864,13 +864,13 @@ letter-spacing: 0;
   cursor: pointer;
 
   background: rgba(226,229,233,0.70);
-  border: 2px solid rgba(141,168,184,0.26);
+  border: 2px solid rgba(141,168,184,0.6);
   border-radius: 4px;
   border-style: dashed;
   text-decoration: none;
 }
 .zero-site:hover {
-  background: rgba(232,235,238,0.70);
+  background: rgba(210,218,228,0.70);
 }
 
 
@@ -953,7 +953,7 @@ letter-spacing: 0;
   align-self: auto;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-content: stretch;
@@ -965,12 +965,15 @@ letter-spacing: 0;
   cursor: pointer;
 
   background: rgba(226,229,233,0.70);
-  border: 2px solid rgba(141,168,184,0.26);
+  border: 2px solid rgba(141,168,184,0.6);
   border-radius: 4px;
   border-style: dashed;
   text-decoration: none;
-  padding-right: 10px;
+
   width: 48%;
+
+  padding-top: 12px;
+  padding-bottom: 18px;
 }
 
 .ukit-alt-buttons-fb2ukit img {
@@ -993,7 +996,7 @@ letter-spacing: 0;
   flex: 0 1 auto;
   align-self: auto;
 
-  font-family: avenir-demi;
+  font-family: avenir-medium;
   font-size: 16px;
   color: #3A3D41;
   letter-spacing: 0;
@@ -1002,11 +1005,11 @@ letter-spacing: 0;
 }
 
 .ukit-alt-buttons-fb2ukit:hover {
-  background: rgba(232,235,238,0.70);
+  background: rgba(210,218,228,0.70);
 }
 
 .ukit-alt-buttons-vk2ukit:hover {
-  background: rgba(232,235,238,0.70);
+  background: rgba(210,218,228,0.70);
 }
 
 .ukit-alt-title-description {
