@@ -47,10 +47,20 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/46321338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+  <div class="top-wrapper">
+    <div class="top">
+    <div class="open-modal-new" title="Выбрать сайт из моих сайтов">
+      <span>Мои сайты</span>
+    </div>
+    <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard">
+    </a>
+    <a class="current-site" href="http://home-kitchen.ru">home-kitchen.ru
+    </a>
+    </div>
+  </div>
   <div class="dash">
+
     <div class="bg">
-      <div class="bg-header">
-      </div>
       <div class="bg-header-main">
       </div>
       <div class="bg-banner">
@@ -60,20 +70,9 @@
     </div>
 
     <div class="center">
-      <div class="top">
-        <div class="open-modal-new" title="Выбрать сайт из моих сайтов">
-          <span>Мои сайты</span>
-  <!--         <span class="button-white">Выбрать сайт из 8</button> -->
-        </div>
-
-        <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard">
-        </a>
-        <a class="current-site" href="http://home-kitchen.ru">home-kitchen.ru</a>
-      </div>
     </div>
     <div class="bg">
-        <div class="bg-header">
-        </div>
+
         <div class="bg-header-main">
         </div>
         <div class="bg-banner">
@@ -108,8 +107,8 @@
         </div>
       </div>
       <div class="view-select">
-        <img src="src/icn-show-blocks-active.png">
-        <img src="src/icn-show-list-normal.png">
+        <div class="view-select-cards"></div>
+        <div class="view-select-table"></div>
       </div>
     </div>
 
@@ -149,7 +148,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Студия домашней кухни</h2>
+              <h2 class="premium-header">Студия домашней кухни</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -257,7 +256,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Сообщество hand-made мастеров Creators</h2>
+              <h2 class="premium-header">Сообщество hand-made мастеров Creators</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -293,7 +292,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Флористический дизайн от «Botanique»</h2>
+              <h2 class="premium-header">Флористический дизайн от «Botanique»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -329,7 +328,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Йога-центр «Намасте»</h2>
+              <h2 class="premium-header">Йога-центр «Намасте»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -437,7 +436,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Галерея цветов «Флорист»</h2>
+              <h2 class="premium-header">Галерея цветов «Флорист»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -473,7 +472,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Приложение для меломанов «Music Station»</h2>
+              <h2 class="expired-header">Приложение для меломанов «Music Station»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -487,8 +486,8 @@
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
                 <div class="info-site-tariff">
-                  <img class="favico trial-ico" src="src/img-trial.png">
-                  <span class="info-site-tariff-name tariff-expired trial">Триал закончился</span>
+                  <img class="favico trial-ico" src="src/img-trial-red.png">
+                  <span class="info-site-tariff-name tariff-expired trial">«Триал» закончился. Купить тариф</span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -509,7 +508,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Барбершоп «Hairdresser»</h2>
+              <h2 class="expired-header">Барбершоп «Hairdresser»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -523,8 +522,8 @@
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
                 <div class="info-site-tariff">
-                  <img class="favico" src="src/img-premium.png">
-                  <span class="info-site-tariff-name tariff-expired">Премиум закончился</span>
+                  <img class="favico" src="src/img-premium-red.png">
+                  <span class="info-site-tariff-name tariff-expired">«Премиум» закончился. Продлить тариф</span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -638,6 +637,17 @@
   $('.close-modal').click(function() {
     $('.modal').toggleClass('active')
   })
+
+  $('.view-select-cards').click(function() {
+    $('.view-select-cards').toggleClass('view-select-cards-selected');
+    $('.view-select-table').toggleClass('view-select-table-selected')
+  })
+  
+  $('.view-select-table').click(function() {
+    $('.view-select-cards').toggleClass('view-select-cards-selected');
+    $('.view-select-table').toggleClass('view-select-table-selected')
+  })
+
 
   $('.button-back').click(function() {
     $('.modal').toggleClass('active')

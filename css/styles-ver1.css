@@ -81,6 +81,33 @@ body {
   color: #a2b9c7;
 }
 
+.view-select-cards {
+  width: 48px;
+  height: 48px;
+  background-image: url(../src/icn-show-blocks-active.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.view-select-cards-selected {
+  background-image: url(../src/icn-show-blocks-normal.png);
+}
+
+.view-select-table {
+  width: 48px;
+  height: 48px;
+  background-image: url(../src/icn-show-list-normal.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.view-select-table-selected {
+  background-image: url(../src/icn-show-list-active.png);
+}
+
+
 
 header {
   height: auto;
@@ -101,7 +128,7 @@ header {
 
   position: sticky;
   z-index: 1;
-  top: 0;
+  top: 61px;
 }
 
 .row-content {
@@ -118,11 +145,6 @@ header {
   align-items: stretch;
 }
 
-.view-select img {
-  margin-left: 18px;
-  cursor: pointer;
-}
-
 .view-select {
   display: flex;
   flex-direction: row;
@@ -130,6 +152,16 @@ header {
   justify-content: flex-start;
   align-content: stretch;
   align-items: center;
+  position: relative;
+  left: 19px;
+}
+
+.premium-header {
+  color: #4caf50 !important;
+}
+
+.expired-header {
+  color: #C2445C !important;
 }
 
 .search-create {
@@ -199,18 +231,24 @@ button {
   height: 768px;
 }
 
+.top-wrapper {
+  background-color: #132026;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
 .top {
   order: 0;
   flex: 0 1 auto;
-  align-self: flex-start;
+  align-self: center;
   background: url(../src/topbar.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 1024px;
   height: 61px;
-  /*position: sticky;
-  z-index: 1;
-  top: 0;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .open-modal {
@@ -1154,6 +1192,9 @@ letter-spacing: 0;
 }
 
 .expired:before {
+  background-image: url(../src/selected-site-mark.png)!important;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: rgba(255,255,255,0.8);
 }
 
@@ -1213,17 +1254,17 @@ letter-spacing: 0;
   color: #FFF;
   line-height: 24px;
   letter-spacing: 0.5px;
-  /*padding-left: 18px;
-  padding-top: 8px;
-  padding-right: 18px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 19px;
+  padding-left: 30px;
+  padding-right: 30px;
   background-color: #4CAF50;
-  border-radius: 6px;*/
+  border-radius: 6px;
 }
 
-/*.preview-overlay span:hover{
+.preview-overlay span:hover{
   background-color: #67bd6a;
-}*/
+}
 .menu-wrapper {
   order: 0;
   flex: 0 1 auto;

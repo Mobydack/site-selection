@@ -47,10 +47,20 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/46321338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+  <div class="top-wrapper">
+    <div class="top">
+    <div class="open-modal-new" title="Выбрать сайт из моих сайтов">
+      <span>Мои сайты</span>
+    </div>
+    <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard">
+    </a>
+    <a class="current-site" href="http://home-kitchen.ru">home-kitchen.ru
+    </a>
+    </div>
+  </div>
+
   <div class="dash">
     <div class="bg">
-      <div class="bg-header">
-      </div>
       <div class="bg-header-main">
       </div>
       <div class="bg-banner">
@@ -60,20 +70,8 @@
     </div>
 
     <div class="center">
-      <div class="top">
-        <div class="open-modal-new" title="Выбрать сайт из моих сайтов">
-          <span>Мои сайты</span>
-  <!--         <span class="button-white">Выбрать сайт из 8</button> -->
-        </div>
-
-        <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard">
-        </a>
-        <a class="current-site" href="http://home-kitchen.ru">home-kitchen.ru</a>
-      </div>
     </div>
     <div class="bg">
-        <div class="bg-header">
-        </div>
         <div class="bg-header-main">
         </div>
         <div class="bg-banner">
@@ -108,8 +106,8 @@
         </div>
       </div>
       <div class="view-select">
-        <img src="src/icn-show-blocks-active.png">
-        <img src="src/icn-show-list-normal.png">
+        <div class="view-select-cards"></div>
+        <div class="view-select-table"></div>
       </div>
     </div>
 
@@ -623,9 +621,25 @@
     $currentTarget.toggleClass('selected');
     $('.modal').toggleClass('active')
   })
+  
+  $('.preview').click(function() {
+    $('.open-modal-new').toggleClass('selected');
+    $('.modal').toggleClass('active')
+  })
+
 
   $('.close-modal').click(function() {
     $('.modal').toggleClass('active')
+  })
+
+  $('.view-select-cards').click(function() {
+    $('.view-select-cards').toggleClass('view-select-cards-selected');
+    $('.view-select-table').toggleClass('view-select-table-selected')
+  })
+  
+  $('.view-select-table').click(function() {
+    $('.view-select-cards').toggleClass('view-select-cards-selected');
+    $('.view-select-table').toggleClass('view-select-table-selected')
   })
 
   $('.button-back').click(function() {

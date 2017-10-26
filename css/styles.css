@@ -82,6 +82,7 @@ body {
 }
 
 
+
 header {
   height: auto;
   width: 100%;
@@ -101,7 +102,7 @@ header {
 
   position: sticky;
   z-index: 1;
-  top: 0;
+  top: 61px;
 }
 
 .row-content {
@@ -118,11 +119,6 @@ header {
   align-items: stretch;
 }
 
-.view-select img {
-  margin-left: 18px;
-  cursor: pointer;
-}
-
 .view-select {
   display: flex;
   flex-direction: row;
@@ -130,6 +126,34 @@ header {
   justify-content: flex-start;
   align-content: stretch;
   align-items: center;
+  position: relative;
+  left: 19px;
+}
+
+.view-select-cards {
+  width: 48px;
+  height: 48px;
+  background-image: url(../src/icn-show-blocks-active.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.view-select-cards-selected {
+  background-image: url(../src/icn-show-blocks-normal.png);
+}
+
+.view-select-table {
+  width: 48px;
+  height: 48px;
+  background-image: url(../src/icn-show-list-normal.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.view-select-table-selected {
+  background-image: url(../src/icn-show-list-active.png);
 }
 
 .search-create {
@@ -199,19 +223,26 @@ button {
   height: 768px;
 }
 
+.top-wrapper {
+  background-color: #132026;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
 .top {
   order: 0;
   flex: 0 1 auto;
-  align-self: flex-start;
+  align-self: center;
   background: url(../src/topbar.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 1024px;
   height: 61px;
-  /*position: sticky;
-  z-index: 1;
-  top: 0;*/
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .open-modal {
   background:url(../src/button-choose-site.png) no-repeat;
@@ -990,7 +1021,14 @@ letter-spacing: 0;
 }
 
 .selected-site:before {
+  background-image: url(../src/selected-site-mark.png)!important;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: rgba(51,143,255,0.6);
+}
+
+.selected-site:before:hover {
+  background-image: none;
 }
 
 .second-site {
