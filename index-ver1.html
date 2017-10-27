@@ -82,37 +82,35 @@
       </div>
 
     </div>
-  </div>
-
+<header>
+	<div class="row-content">
+	  <div class="sort-filter">
+		<div class="filter-select-wrapper">
+		  <select class="filter-select">
+			<option value="all">Все сайты</option>
+			<option value="published">Опубликованные</option>
+			<option value="unpublished">Неопубликованные</option>
+			<option value="trial">С тарифом «Триал»</option>
+			<option value="payment">С платным тарифом</option>
+		  </select>
+		</div>
+		<div class="filter-select-wrapper">
+		  <select class="filter-select">
+			<option value="new">Сначала новые</option>
+			<option value="old">Сначала старые</option>
+			<option value="a-z">По алфавиту А-Я</option>
+			<option value="z-a">По алфавиту Я-А</option>
+		  </select>
+		</div>
+	  </div>
+	  <div class="view-select">
+		<div class="view-select-cards"></div>
+		<div class="view-select-table"></div>
+	  </div>
+	</div>
+</header>
 <div class="modal">
-  <header>
-    <div class="row-content">
-      <div class="sort-filter">
-        <div class="filter-select-wrapper">
-          <select class="filter-select">
-            <option value="all">Все сайты</option>
-            <option value="published">Опубликованные</option>
-            <option value="unpublished">Неопубликованные</option>
-            <option value="trial">С тарифом «Триал»</option>
-            <option value="payment">С платным тарифом</option>
-          </select>
-        </div>
-        <div class="filter-select-wrapper">
-          <select class="filter-select">
-            <option value="new">Сначала новые</option>
-            <option value="old">Сначала старые</option>
-            <option value="a-z">По алфавиту А-Я</option>
-            <option value="z-a">По алфавиту Я-А</option>
-          </select>
-        </div>
-      </div>
-      <div class="view-select">
-        <div class="view-select-cards"></div>
-        <div class="view-select-table"></div>
-      </div>
-    </div>
-
-  </header>
+  
   <div class="content">
     <div class="stroke">
       <div class="tile create-new">
@@ -121,11 +119,10 @@
           <span>Создать новый сайт</span>
         </a>
         <div class="ukit-alt">
-          <div class="ukit-alt-title-tooltip">
-          </div>
           <div class="ukit-alt-title">
               <span class="ukit-alt-title-description" title="Данные копируются из страницы, из них создается сайт.  Это бесплатно и безопасно для вашей страницы в соцсети" >Сайт из готовой страницы в соцсети</span>
               <img src="src/img-question-mark.png">
+              <div class="ukit-alt-title-tooltip"></div>
           </div>
           <div class="ukit-alt-buttons">
             <a href="https://ukit.com/ru/lp/convert" class="ukit-alt-buttons-fb2ukit">
@@ -626,7 +623,8 @@
   $('.open-modal-new').click(function(event) {
     var $currentTarget=$(event.currentTarget);
     $currentTarget.toggleClass('selected');
-    $('.modal').toggleClass('active')
+    $('.modal').toggleClass('active');
+    $('header').toggleClass('active');
   })
 
   $('.preview').click(function() {
@@ -653,9 +651,9 @@
     $('.modal').toggleClass('active')
   })
 
-  $('.ukit-alt-title').hover(function() {
-    $(this).siblings('.ukit-alt-title-tooltip').toggleClass('active')
-  })
+//  $('.ukit-alt-title').hover(function() {
+//    $(this).siblings('.ukit-alt-title-tooltip').toggleClass('active')
+//  })
 
   $('.button-detail').click(function() {
     $(this).siblings('.menu').toggleClass('active')
