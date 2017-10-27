@@ -156,13 +156,13 @@ header {
   left: 19px;
 }
 
-.premium-header {
+/*.premium-header {
   color: #4caf50 !important;
-}
+}*/
 
-.expired-header {
-  color: #C2445C !important;
-}
+/*.expired-header {
+  color: #8DA8B8 !important;
+}*/
 
 .search-create {
   order: 0;
@@ -733,12 +733,12 @@ margin-right: 6px;
 
 .info-site-name > h2 {
   font-family: avenir-medium;
-  font-size: 21px;
+  font-size: 18px;
   color: #3A3D41;
 /*  letter-spacing: 0.4px;*/
   line-height: 24px;
   display: inline-block;
-  margin: 0px 0px 8px 2px;
+  margin: 0px 0px 4px 2px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1192,7 +1192,7 @@ letter-spacing: 0;
 }
 
 .expired:before {
-  background-image: url(../src/selected-site-mark.png)!important;
+  background-image: url(../src/expired-warning.png)!important;
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(255,255,255,0.8);
@@ -1254,10 +1254,10 @@ letter-spacing: 0;
   color: #FFF;
   line-height: 24px;
   letter-spacing: 0.5px;
-  padding-top: 16px;
-  padding-bottom: 19px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 34px;
   background-color: #4CAF50;
   border-radius: 6px;
 }
