@@ -950,8 +950,8 @@ margin-right: 6px;
   width: 150px;
   margin: 20px;
   /*height: 150px;*/
-  min-width: 400px;
-  max-width: 600px;
+  min-width: 350px;
+  max-width: 500px;
   /*min-height: 400px;
   max-height: 600px;*/
 
@@ -1364,7 +1364,7 @@ margin-right: 6px;
 }
 
 .tariff-expired a{
-  color: #C2445C;
+  color: #338FFF;
 }
 
 
