@@ -58,8 +58,8 @@
     </a>
     </div>
   </div>
-
   <div class="dash">
+
     <div class="bg">
       <div class="bg-header-main">
       </div>
@@ -72,6 +72,7 @@
     <div class="center">
     </div>
     <div class="bg">
+
         <div class="bg-header-main">
         </div>
         <div class="bg-banner">
@@ -81,80 +82,93 @@
       </div>
 
     </div>
-  </div>
-
+<header>
+	<div class="row-content">
+	  <div class="sort-filter">
+		<div class="filter-select-wrapper">
+		  <select class="filter-select">
+			<option value="all">Все сайты</option>
+			<option value="published">Опубликованные</option>
+			<option value="unpublished">Неопубликованные</option>
+			<option value="trial">С тарифом «Триал»</option>
+			<option value="payment">С платным тарифом</option>
+		  </select>
+		</div>
+		<div class="filter-select-wrapper">
+		  <select class="filter-select">
+			<option value="new">Сначала новые</option>
+			<option value="old">Сначала старые</option>
+			<option value="a-z">По алфавиту А-Я</option>
+			<option value="z-a">По алфавиту Я-А</option>
+		  </select>
+		</div>
+	  </div>
+	  <div class="view-select">
+		<div title="В виде карточек" class="view-select-cards"></div>
+		<div title="В виде таблицы" class="view-select-table"></div>
+	  </div>
+	</div>
+</header>
 <div class="modal">
-  <header>
-    <div class="row-content">
-      <div class="sort-filter">
-        <div class="filter-select-wrapper">
-          <select class="filter-select">
-            <option value="all">Все сайты</option>
-            <option value="published">Опубликованные</option>
-            <option value="unpublished">Неопубликованные</option>
-            <option value="trial">С тарифом «Триал»</option>
-            <option value="payment">С платным тарифом</option>
-          </select>
-        </div>
-        <div class="filter-select-wrapper">
-          <select class="filter-select">
-            <option value="new">Сначала новые</option>
-            <option value="old">Сначала старые</option>
-            <option value="a-z">По алфавиту А-Я</option>
-            <option value="z-a">По алфавиту Я-А</option>
-          </select>
-        </div>
-      </div>
-      <div class="view-select">
-        <div class="view-select-cards"></div>
-        <div class="view-select-table"></div>
-      </div>
-    </div>
 
-  </header>
   <div class="content">
     <div class="stroke">
       <div class="tile create-new">
-        <a class="zero-site" href="http://ukit.com/neowizard">
+        <a title="Создать новый сайт из тематического шаблона" class="zero-site" href="http://ukit.com/neowizard">
+          <img src="src/button-create.png" alt="">
+          <span>Создать новый сайт</span>
         </a>
         <div class="ukit-alt">
-          <div class="ukit-alt-title-tooltip">
-          </div>
           <div class="ukit-alt-title">
               <span class="ukit-alt-title-description" title="Данные копируются из страницы, из них создается сайт.  Это бесплатно и безопасно для вашей страницы в соцсети" >Сайт из готовой страницы в соцсети</span>
               <img src="src/img-question-mark.png">
+              <div class="ukit-alt-title-tooltip"></div>
           </div>
           <div class="ukit-alt-buttons">
-            <div class="ukit-alt-buttons-fb2ukit">
-            </div>
-            <div class="ukit-alt-buttons-vk2ukit">
-            </div>
+            <a title="Создать сайт из страницы на Facebook" href="https://ukit.com/ru/lp/convert" class="ukit-alt-buttons-fb2ukit">
+              <img src="src/btn-fb.png" alt="">
+              <span>Создать сайт</span>
+            </a>
+            <a title="Создать сайт из страницы во ВКонтакте" href="https://ukit.com/ru/lp/convert-vk" class="ukit-alt-buttons-vk2ukit">
+              <img src="src/btn-vk.png" alt="">
+              <span>Создать сайт</span>
+            </a>
           </div>
         </div>
       </div>
       <div class="tile">
         <div class="preview first-site selected-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Студия домашней кухни</h2>
+              <h2 class="premium-header">Студия домашней кухни</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://home-kitchen.ru">home-kitchen.ru</a>
+                  <div title="Опубликован 28.8.2017" class="info-site-url">
+                    <img src="src/img-published-icn.png">
+                    <a class="published-domain-name" href="https://home-kitchen.ru">home-kitchen.ru</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован 28.8.2017</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Оплаченный период тарифа «Премиум» закончится через 14 дней" class="info-site-tariff">
                   <img class="favico" src="src/img-premium.png">
                   <span class="info-site-tariff-name">Премиум</span>
                 </div>
@@ -171,7 +185,17 @@
       <div class="tile">
         <div class="preview second-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
@@ -181,18 +205,18 @@
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://home-kitchen.ru">alisia-ansem.ru</a>
+                  <div title="Опубликован 10.9.2017" class="info-site-url">
+                    <img src="src/img-published-icn.png">
+                    <a class="published-domain-name" href="https://home-kitchen.ru">alisia-ansem.ru</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован 10.9.2017</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Пробный период закончится через 7 дней" class="info-site-tariff">
                   <img class="favico trial-ico" src="src/img-trial.png">
-                  <span class="info-site-tariff-name trial">Триал</span>
+                  <span class="info-site-tariff-name trial"><a href="">Осталось 7 дней</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -207,7 +231,17 @@
       <div class="tile">
         <div class="preview third-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
@@ -217,18 +251,18 @@
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <!-- <img src="src/img-check.png"> -->
-                    <a class="system-domain-name" href="https://1wvcqkq24.urest.org">1wvcqkq24.urest.org</a>
+                  <div title="Опубликован сегодня в 9:52" class="info-site-url">
+                    <img src="src/img-published-icn.png">
+                    <a class="published-domain-name" href="https://1wvcqkq24.urest.org">1wvcqkq24.urest.org</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован сегодня в 9:52</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Пробный период закончится через 10 дней" class="info-site-tariff">
                   <img class="favico trial-ico" src="src/img-trial.png">
-                  <span class="info-site-tariff-name trial">Триал</span>
+                  <span class="info-site-tariff-name trial"><a href="">Осталось 10 дней</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -243,28 +277,38 @@
       <div class="tile">
         <div class="preview forth-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Сообщество hand-made мастеров Creators</h2>
+              <h2 class="premium-header">Сообщество hand-made мастеров Creators</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://home-kitchen.ru">hand-made-creators.com</a>
+                  <div title="Опубликован сегодня в 11:23" class="info-site-url">
+                    <img src="src/img-published-icn.png">
+                    <a class="published-domain-name" href="https://home-kitchen.ru">hand-made-creators.com</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован сегодня в 11:23</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Оплаченный период тарифа «Премиум» закончится через 20 дней" class="info-site-tariff">
                   <img class="favico" src="src/img-premium.png">
-                  <span class="info-site-tariff-name">Премиум</span>
+                  <span class="info-site-tariff-name"><a href="">Осталось 20 дней</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -279,26 +323,36 @@
       <div class="tile">
         <div class="preview fifth-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+                  <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+<!--                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Флористический дизайн от «Botanique»</h2>
+              <h2 class="premium-header">Флористический дизайн от «Botanique»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://home-kitchen.ru">ботаник-дизайн.рф</a>
+                  <div title="Сайт не опубликован" class="info-site-url">
+                    <img src="src/img-unpublished-icn.png">
+                    <a class="unpublished-domain-name" href="https://home-kitchen.ru">ботаник-дизайн.рф</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Не опубликован</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Тариф «Премиум»" class="info-site-tariff">
                   <img class="favico" src="src/img-premium.png">
                   <span class="info-site-tariff-name">Премиум</span>
                 </div>
@@ -315,28 +369,38 @@
       <div class="tile">
         <div class="preview sixth-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Йога-центр «Намасте»</h2>
+              <h2 class="premium-header">Йога-центр «Намасте»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://home-kitchen.ru">yoga-namaste.ru</a>
+                  <div title="Опубликован вчера в 14:20" class="info-site-url">
+                    <img src="src/img-published-icn.png">
+                    <a class="published-domain-name" href="https://home-kitchen.ru">yoga-namaste.ru</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован вчера в 14:20</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Оплаченный период тарифа «Премиум» закончится через 15 дней" class="info-site-tariff">
                   <img class="favico" src="src/img-premium.png">
-                  <span class="info-site-tariff-name">Премиум</span>
+                  <span class="info-site-tariff-name"><a href="">Осталось 15 дней</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -351,7 +415,17 @@
       <div class="tile">
         <div class="preview seventh-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+                  <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
@@ -361,18 +435,18 @@
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <!-- <img src="src/img-check.png"> -->
-                    <a class="system-domain-name" href="https://home-kitchen.ru">6acx2uyo73rb.ukit.me</a>
+                  <div title="Сайт не опубликован" class="info-site-url">
+                    <img src="src/img-unpublished-icn.png">
+                    <a class="unpublished-domain-name" href="https://home-kitchen.ru">6acx2uyo73rb.ukit.me</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Не опубликован</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Пробный период закончится через 3 дня" class="info-site-tariff">
                   <img class="favico trial-ico" src="src/img-trial.png">
-                  <span class="info-site-tariff-name trial">Триал</span>
+                  <span class="info-site-tariff-name trial"><a href="">Осталось 3 дня</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -387,7 +461,17 @@
       <div class="tile">
         <div class="preview eigth-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+                  <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
@@ -397,18 +481,18 @@
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://home-kitchen.ru">waytodo-app.com</a>
+                  <div title="Сайт не опубликован" class="info-site-url">
+                    <img src="src/img-unpublished-icn.png">
+                    <a class="unpublished-domain-name" href="https://home-kitchen.ru">waytodo-app.com</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Не опубликован</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Пробный период закончится через 14 дней" class="info-site-tariff">
                   <img class="favico trial-ico" src="src/img-trial.png">
-                  <span class="info-site-tariff-name trial">Триал</span>
+                  <span class="info-site-tariff-name trial"><a href="">Осталось 14 дней</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -423,28 +507,38 @@
       <div class="tile">
         <div class="preview ninth-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Галерея цветов «Флорист»</h2>
+              <h2 class="premium-header">Галерея цветов «Флорист»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://home-kitchen.ru">галерея-флорист.рф</a>
+                  <div title="Опубликован вчера в 9:22" class="info-site-url">
+                    <img  src="src/img-published-icn.png">
+                    <a class="published-domain-name" href="https://home-kitchen.ru">галерея-флорист.рф</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован вчера в 9:22</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
+                <div title="Оплаченный период тарифа «Премиум» закончится через 10 дней" class="info-site-tariff">
                   <img class="favico" src="src/img-premium.png">
-                  <span class="info-site-tariff-name">Премиум</span>
+                  <span class="info-site-tariff-name"><a href="">Осталось 10 дней</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -459,28 +553,38 @@
       <div class="tile">
         <div class="preview expired tenth-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Приложение для меломанов «Music Station»</h2>
+              <h2 class="expired-header">Приложение для меломанов «Music Station»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <!-- <img src="src/img-check.png"> -->
-                    <a class="system-domain-name" href="https://1u7imgy48.ukit.me">1u7imgy48.ukit.me</a>
+                  <div title="Сайт не опубликован" class="info-site-url">
+                    <img  src="src/img-unpublished-icn.png">
+                    <a class="unpublished-domain-name" href="https://1u7imgy48.ukit.me">1u7imgy48.ukit.me</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Не опубликован</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
-                  <img class="favico trial-ico" src="src/img-trial.png">
-                  <span class="info-site-tariff-name tariff-expired trial">Триал закончился</span>
+                <div title="Пробный период закончился" class="info-site-tariff">
+                  <img class="favico trial-ico" src="src/img-trial-red.png">
+                  <span class="info-site-tariff-name tariff-expired trial">Период закончился. <a href="">Продлить</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -495,28 +599,38 @@
       <div class="tile">
         <div class="preview expired eleventh-site">
           <div class="preview-overlay">
-              <span>Выбрать сайт</span>
+              <div class="preview-overlay-primary">
+                <span class="preview-overlay-choose-button">Выбрать сайт</span>
+              </div>
+              <div class="preview-overlay-secondary">
+                <div class="preview-overlay-secondary-leftgroup">
+                  <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
+                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+                </div>
+                <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
+              </div>
           </div>
         </div>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2>Барбершоп «Hairdresser»</h2>
+              <h2 class="expired-header">Барбершоп «Hairdresser»</h2>
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div class="info-site-url">
-                    <img src="src/img-check.png">
-                    <a class="custom-domain-name" href="https://hairdresser.ru">hairdresser.ru</a>
+                  <div title="Сайт не опубликован" class="info-site-url">
+                    <img  src="src/img-unpublished-icn.png">
+                    <a class="unpublished-domain-name" href="https://hairdresser.ru">hairdresser.ru</a>
                   </div>
                   <div class="info-site-publish">
                     <span class="info-text">Не опубликован</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div class="info-site-tariff">
-                  <img class="favico" src="src/img-premium.png">
-                  <span class="info-site-tariff-name tariff-expired">Премиум закончился</span>
+                <div title="Оплаченный период тарифа «Премиум» закончился" class="info-site-tariff">
+                  <img class="favico" src="src/img-premium-red.png">
+                  <span class="info-site-tariff-name tariff-expired">Период закончился. <a href="">Продлить</a></span>
                 </div>
                 <div class="info-site-tariff-counter">
                   <span>
@@ -619,14 +733,14 @@
   $('.open-modal-new').click(function(event) {
     var $currentTarget=$(event.currentTarget);
     $currentTarget.toggleClass('selected');
-    $('.modal').toggleClass('active')
+    $('.modal').toggleClass('active');
+    $('header').toggleClass('active');
   })
-  
+
   $('.preview').click(function() {
     $('.open-modal-new').toggleClass('selected');
     $('.modal').toggleClass('active')
   })
-
 
   $('.close-modal').click(function() {
     $('.modal').toggleClass('active')
@@ -636,19 +750,20 @@
     $('.view-select-cards').toggleClass('view-select-cards-selected');
     $('.view-select-table').toggleClass('view-select-table-selected')
   })
-  
+
   $('.view-select-table').click(function() {
     $('.view-select-cards').toggleClass('view-select-cards-selected');
     $('.view-select-table').toggleClass('view-select-table-selected')
   })
 
+
   $('.button-back').click(function() {
     $('.modal').toggleClass('active')
   })
 
-  $('.ukit-alt-title').hover(function() {
-    $(this).siblings('.ukit-alt-title-tooltip').toggleClass('active')
-  })
+//  $('.ukit-alt-title').hover(function() {
+//    $(this).siblings('.ukit-alt-title-tooltip').toggleClass('active')
+//  })
 
   $('.button-detail').click(function() {
     $(this).siblings('.menu').toggleClass('active')
