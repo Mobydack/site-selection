@@ -1586,6 +1586,8 @@ margin-right: 6px;
   width: 100%;
   height:100%;
 
+  z-index: 2;
+
   background-image: linear-gradient(0deg, rgba(28,52,41,0.10) 26%, rgba(28,52,41,0.00) 98%);
 }
 
@@ -1787,13 +1789,100 @@ margin-right: 6px;
   color: #80b9ff;
 }
 
+/*Стили вида "таблица"*/
+.content-table {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.tile-table {
+  margin: 8px;
+  min-width: initial;
+  max-width: none;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-content: none;
+  height: auto;
+  border: none;
+  flex-basis: auto;
+}
+
+.preview-overlay-table {
+  display: none;
+}
+
+
+.preview-table {
+  width: auto;
+  padding-right: 108px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.preview-table::before {
+  content: "";
+}
+
+
+.create-new-table {
+  min-height: initial;
+}
+
+.zero-site-table {
+  flex-direction: row;
+  padding: 0;
+}
+
+.info-site-tariff-tariff-counter-wrapper-table {
+  align-items: flex-start;
+}
+
+
+.info-table {
+    flex-direction: none;
+    justify-content: none;
+    align-content: none;
+    align-items: none;
+    flex-basis: none;
+    order: none;
+    flex: none;
+    align-self: none;
+    width: 100%;
+    height: 30%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    z-index: 2;
+}
+
 
 
 @media screen
   and (min-width: 980px)
-  and (max-width: 1200px) {
+  and (max-width: 1500px) {
     .content {
       padding-left: 0;
       padding-right: 0;
+    }
+    .tile {
+      min-width: 440px;
+      max-width: 500px;
+      margin: 16px;
+    }
+    .content-table {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+    .tile-table {
+      margin: 8px;
+      min-width: initial;
+      max-width: none;
+      width: 100%;
     }
 }

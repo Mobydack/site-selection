@@ -145,8 +145,6 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
@@ -191,7 +189,7 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
+
                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
@@ -237,7 +235,6 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
@@ -283,8 +280,6 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
@@ -330,7 +325,6 @@
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-<!--                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
@@ -375,8 +369,6 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
@@ -513,8 +505,6 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-                  <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
@@ -559,7 +549,6 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
@@ -605,7 +594,6 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-<!--                   <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span> -->
                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
@@ -644,6 +632,8 @@
       </div>
     </div>
   </div>
+
+
 <!--
   <h1>Если сайт один</h1>
   <div class="content">
@@ -748,12 +738,28 @@
 
   $('.view-select-cards').click(function() {
     $('.view-select-cards').toggleClass('view-select-cards-selected');
-    $('.view-select-table').toggleClass('view-select-table-selected')
+    $('.view-select-table').toggleClass('view-select-table-selected');
+    $('.content').toggleClass('content-table');
+    $('.tile').toggleClass('tile-table');
+    $('.preview').toggleClass('preview-table');
+    $('.info').toggleClass('info-table');
+    $('.create-new').toggleClass('create-new-table');
+    $('.zero-site').toggleClass('zero-site-table');
+    $('.preview-overlay').toggleClass('preview-overlay-table');
+    $('.info-site-tariff-tariff-counter-wrapper').toggleClass('info-site-tariff-tariff-counter-wrapper-table');
   })
 
   $('.view-select-table').click(function() {
     $('.view-select-cards').toggleClass('view-select-cards-selected');
-    $('.view-select-table').toggleClass('view-select-table-selected')
+    $('.view-select-table').toggleClass('view-select-table-selected');
+    $('.content').toggleClass('content-table');
+    $('.tile').toggleClass('tile-table');
+    $('.preview').toggleClass('preview-table');
+    $('.info').toggleClass('info-table');
+    $('.create-new').toggleClass('create-new-table');
+    $('.zero-site').toggleClass('zero-site-table');
+    $('.preview-overlay').toggleClass('preview-overlay-table');
+    $('.info-site-tariff-tariff-counter-wrapper').toggleClass('info-site-tariff-tariff-counter-wrapper-table');
   })
 
 
