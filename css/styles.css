@@ -1840,7 +1840,8 @@ margin-right: 6px;
 .zero-site-table {
   flex-direction: row;
   padding: 0;
-  margin-right: 6px;
+  margin-right: 24px;
+
 }
 
 .zero-site-table img{
@@ -1872,7 +1873,21 @@ margin-right: 6px;
     z-index: 2;
 }
 
+.ukit-alt-buttons-fb2ukit-table {
+    flex-direction: row !important;
+    min-height: auto;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    min-width: initial;
+}
 
+.ukit-alt-buttons-vk2ukit-table {
+    flex-direction: row !important;
+    min-height: auto;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    min-width: initial;
+}
 
 @media screen
   and (min-width: 980px)
@@ -1898,6 +1913,9 @@ margin-right: 6px;
     }
 
 }
+
+
+
 @media (min-width: 1190px) {
   .content-table .stroke {
     justify-content: flex-start;
