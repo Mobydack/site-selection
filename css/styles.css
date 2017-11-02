@@ -38,6 +38,8 @@
 body {
   margin: auto;
   background-color: #E7EBEE;
+  --tile-table-margin: 8px;
+  --preview-table-width: 160px;
 }
 * {
   box-sizing: border-box;
@@ -719,7 +721,7 @@ margin-right: 6px;
 }
 
 .info-site-url-publish-wrapper {
-    min-width: 30%;
+    /* min-width: 30%; */
 }
 
 .info-site-tariff-tariff-counter-wrapper {
@@ -730,7 +732,7 @@ margin-right: 6px;
   justify-content: flex-start;
   align-content: center;
   align-items: flex-end;
-  min-width: 50%;
+  /* min-width: 50%; */
 
 }
 
@@ -1170,6 +1172,10 @@ margin-right: 6px;
   align-items: center;
   width: 100%;
 
+}
+
+.content-table .ukit-alt-buttons-fb2ukit, .content-table .ukit-alt-buttons-vk2ukit{
+  flex-direction: column;
 }
 
 .ukit-alt-buttons-fb2ukit, .ukit-alt-buttons-vk2ukit{
@@ -1816,7 +1822,7 @@ margin-right: 6px;
 
 .preview-table {
   width: auto;
-  padding-right: 108px;
+  padding-right: var(--preview-table-width);
   padding-bottom: 0;
   padding-left: 0;
   padding-top: 0;
@@ -1834,6 +1840,11 @@ margin-right: 6px;
 .zero-site-table {
   flex-direction: row;
   padding: 0;
+  margin-right: 6px;
+}
+
+.zero-site-table img{
+  margin: 18px;
 }
 
 .info-site-tariff-tariff-counter-wrapper-table {
@@ -1850,7 +1861,7 @@ margin-right: 6px;
     order: none;
     flex: none;
     align-self: none;
-    width: 100%;
+    width: calc(100% - var(--preview-table-width));
     height: 30%;
     padding-left: 18px;
     padding-right: 18px;
@@ -1880,9 +1891,44 @@ margin-right: 6px;
       padding-right: 64px;
     }
     .tile-table {
-      margin: 8px;
+      margin: var(--tile-table-margin);
       min-width: initial;
       max-width: none;
       width: 100%;
     }
+
+}
+@media (min-width: 1190px) {
+  .content-table .stroke {
+    justify-content: flex-start;
+  }
+
+  .tile-table:not(.create-new-table) {
+    max-width: calc(50% - var(--tile-table-margin) * 2);
+  }
+
+  .info-site-url-publish-wrapper {
+    min-width: inherit;
+    margin-right: 13px;
+  }
+}
+/* .info-table .info-site-data-wrapper {
+  justify-content: flex-start;
+}
+.info-table .info-site-tariff-tariff-counter-wrapper-table {
+  min-width: auto;
+} */
+
+.content .info .preview-overlay-secondary{
+  display: none;
+}
+.content-table .info-table:hover .preview-overlay-secondary {
+  display: flex;
+  align-items: center;
+}
+.tile-table .info-site-data-wrapper {
+  min-height: 36px;
+}
+.content-table .preview-overlay-secondary-leftgroup {
+  margin-bottom: 0;
 }
