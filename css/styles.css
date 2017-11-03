@@ -2028,3 +2028,22 @@ margin-right: 6px;
 .content-table .preview-overlay-secondary-leftgroup {
   margin-bottom: 0;
 }
+/* 
+.tile-table:hover .preview-overlay-table {
+  display: inherit;
+} */
+.tile-table:hover .preview-overlay-table{
+  opacity: 1;
+  display: inherit;
+}
+.tile-table:hover .preview-overlay-secondary {
+  display: none;
+}
+.tile-table .preview-overlay-primary {
+  margin: 0;
+}
+.tile-table .preview-overlay-choose-button{
+  padding: 8px 10px;
+  border-radius: 18px;
+  font-size: 14px;
+}
