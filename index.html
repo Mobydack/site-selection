@@ -807,11 +807,13 @@
 
   $('.preview').click(function() {
     $('.open-modal-new').toggleClass('selected');
-    $('.modal').toggleClass('active')
+    $('.modal').toggleClass('active');
+    $('header').toggleClass('active');
   })
 
   $('.close-modal').click(function() {
-    $('.modal').toggleClass('active')
+    $('.modal').toggleClass('active');
+    $('header').toggleClass('active');
   })
 
   $('.view-select-cards').click(function() {
@@ -825,6 +827,9 @@
     $('.zero-site').toggleClass('zero-site-table');
     $('.preview-overlay').toggleClass('preview-overlay-table');
     $('.info-site-tariff-tariff-counter-wrapper').toggleClass('info-site-tariff-tariff-counter-wrapper-table');
+    $('.ukit-alt-buttons-vk2ukit').toggleClass('ukit-alt-buttons-vk2ukit-table');
+    $('.ukit-alt-buttons-fb2ukit').toggleClass('ukit-alt-buttons-fb2ukit-table');
+    $('.ukit-alt-title').toggleClass('ukit-alt-title-table');
   })
 
   $('.view-select-table').click(function() {
@@ -838,11 +843,15 @@
     $('.zero-site').toggleClass('zero-site-table');
     $('.preview-overlay').toggleClass('preview-overlay-table');
     $('.info-site-tariff-tariff-counter-wrapper').toggleClass('info-site-tariff-tariff-counter-wrapper-table');
+    $('.ukit-alt-buttons-vk2ukit').toggleClass('ukit-alt-buttons-vk2ukit-table');
+    $('.ukit-alt-buttons-fb2ukit').toggleClass('ukit-alt-buttons-fb2ukit-table');
+    $('.ukit-alt-title').toggleClass('ukit-alt-title-table');
   })
 
 
   $('.button-back').click(function() {
-    $('.modal').toggleClass('active')
+    $('.modal').toggleClass('active');
+    $('header').toggleClass('active');
   })
 
 //  $('.ukit-alt-title').hover(function() {
