@@ -1852,6 +1852,10 @@ margin-right: 6px;
   align-items: flex-start;
 }
 
+.ukit-alt-title-table {
+   margin: 0px 0 11px;
+}
+
 
 .info-table {
     flex-direction: none;
