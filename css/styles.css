@@ -2228,3 +2228,14 @@ margin-right: 6px;
   border-radius: 4px;
   font-size: 14px;
 }
+
+.content:not(.content-table) {
+  position: relative;
+}
+
+.content:not(.content-table) .stroke {
+  position: absolute;
+  top: 0;
+  flex: inherit;
+  width: 100%;
+}
