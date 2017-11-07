@@ -24,6 +24,11 @@
   transition: opacity 0.2s cubic-bezier(0.0, 0.0, 0.2, 1), transform 0.2s cubic-bezier(0.0, 0.0, 0.2, 1);
 }
 
+.select-title {
+  font: 14px/21px 'avenir-regular';
+  color: #8DA8B8;
+}
+
 .scroll-down-button {
   opacity: 0.8;
   cursor: pointer;
@@ -674,6 +679,20 @@ letter-spacing: 0;
   background-color: #C2445C;
 }
 
+.preview-overlay-delete-button:hover:before {
+  content:"Удалить сайт";
+
+  font-family: avenir-regular;
+  font-size: 14px;
+  color: #FFFFFF;
+
+  display: flex;
+  align-content: center;
+  align-items: center;
+
+  padding-right:20px;
+}
+
 .filter span {
 font-family: avenir-regular;
 font-size: 14px;
@@ -723,6 +742,10 @@ margin-right: 6px;
   margin-top: 6px;
 }
 
+.info-table .info-site-data-wrapper {
+  align-items: flex-start;
+}
+
 .info-site-url-publish-wrapper, .info-site-tariff-tariff-counter-wrapper {
   order: 0;
   flex: 0 1 auto;
@@ -730,6 +753,7 @@ margin-right: 6px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin-right: 6px;
 }
 
 .info-site-url-publish-wrapper {
@@ -984,6 +1008,8 @@ margin-right: 6px;
   align-content: center;
   align-items: flex-start;
 
+  cursor: pointer;
+
   overflow: hidden;
 
   width: 150px;
@@ -1142,7 +1168,7 @@ margin-right: 6px;
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  cursor: pointer;
+  cursor: help;
   display: flex;
   justify-content: center;
 }
@@ -1270,15 +1296,27 @@ margin-right: 6px;
 
 .ukit-alt-title-tooltip {
   position: absolute;
-  top: -34px;
+  top: -57px;
   opacity: 0;
-  width: 391px;
+/*  width: 391px;
   height: 50px;
-  background:url(../src/actions-pop-trial-unp-nd.png);
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  background-position: center;
+  border-bottom: 1px dotted black;*/
   transition: 0.2s ease-in-out;
+}
+
+.ukit-alt-title-tooltiptext {
+  display: block;
+  width: 420px;
+  font-family: avenir-regular;
+  font-size: 14px;
+  background-color: white;
+  color: #3a3d41;
+  text-align: center;
+  padding: 13px 14px;
+  border-radius: 2px;
+  box-shadow: 0px 5px 20px #a2b1b9;
+  box-shadow: black;
+  border: 1px solid #afc1cb;
 }
 
 .first-site {
@@ -1609,12 +1647,78 @@ margin-right: 6px;
   background-image: linear-gradient(0deg, rgba(28,52,41,0.10) 26%, rgba(28,52,41,0.00) 98%);
 }
 
+.locked:before {
+  content: "Сайт заблокирован";
+  color: #FFFFFF;
+  font-size: 21px;
+  font-family: avenir-medium;
+  display: flex;
+  line-height: 260px;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../src/locked-site.png)!important;
+  background-position: center 119px;
+  background-repeat: no-repeat;
+  background-color: rgba(194,68,92,0.8);
+}
+
+
 .expired:before {
+  content: "Период закончился";
+  color: #C2445C;
+  font-size: 21px;
+  font-family: avenir-medium;
+  display: flex;
+  line-height: 260px;
+  justify-content: center;
+  align-items: flex-end;
   background-image: url(../src/expired-warning.png)!important;
-  background-position: center;
+  background-position: center 119px;
   background-repeat: no-repeat;
   background-color: rgba(255,255,255,0.8);
 }
+
+.preview-overlay-buy-button {
+  font-family: avenir-regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #4caf50;
+
+  cursor: pointer;
+
+  display: flex;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 16px;
+  border-radius: 18px;
+  margin-top: 18px;
+}
+
+.preview-overlay-buy-button:hover {
+  background-color: #67bd6a;
+}
+
+.preview-overlay-buy-button i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+
+  margin-left: 4px;
+  margin-right: 5px;
+
+  background-color: #132026;
+  background: url(../src/img-payment-icn.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+}
+
+
 
 .trial {
   color: #3A3D41;
@@ -1898,8 +2002,8 @@ margin-right: 6px;
     height: 30%;
     padding-left: 18px;
     padding-right: 18px;
-    padding-top: 16px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: #fff;
     border-radius: 0 0 4px 4px;
     z-index: 2;
@@ -1974,6 +2078,23 @@ margin-right: 6px;
     background-position: center;
 }
 
+.preview-overlay-disabled-button {
+    cursor: not-allowed;
+    background: url(../src/img-publish-icn-table.png);
+    background-color: rgba(19, 32, 38, 0.5);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+}
+
+.preview-overlay-disabled-button:hover {
+    background: url(../src/img-publish-icn-table.png);
+    background-color: rgba(19, 32, 38, 0.5);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: center;
+} 
+
 
 
 @media screen
@@ -2013,6 +2134,35 @@ margin-right: 6px;
       padding-left: 8px;
       padding-right: 8px;
     }
+
+    .filter-select {
+      height: 32px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .sort-filter {
+      height: auto;
+    }
+
+    .select-title {
+      height: 32px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .create-new-table {
+      display: block;
+    }
+
+    .zero-site-table {
+      margin-bottom: 24px;
+    }
+
+    .ukit-alt-title-table .ukit-alt-title-tooltip {
+      top: -70px;
+    }
 }
 
 
@@ -2024,14 +2174,18 @@ margin-right: 6px;
   }
 
   .tile-table:not(.create-new-table) {
-    max-width: calc(50% - var(--tile-table-margin) * 2);
+/*    max-width: calc(50% - var(--tile-table-margin) * 2);*/
   }
 
   .info-site-url-publish-wrapper {
     min-width: inherit;
-    margin-right: 13px;
+    margin-right: 6px;
   }
 }
+
+
+
+
 /* .info-table .info-site-data-wrapper {
   justify-content: flex-start;
 }
@@ -2045,12 +2199,15 @@ margin-right: 6px;
 .content-table .info-table:hover .preview-overlay-secondary {
   display: flex;
   align-items: center;
+  bottom: 8px;
+  position: relative;
 }
 .tile-table .info-site-data-wrapper {
   min-height: 36px;
 }
 .content-table .preview-overlay-secondary-leftgroup {
   margin-bottom: 0;
+
 }
 /* 
 .tile-table:hover .preview-overlay-table {
@@ -2068,6 +2225,6 @@ margin-right: 6px;
 }
 .tile-table .preview-overlay-choose-button{
   padding: 8px 10px;
-  border-radius: 18px;
+  border-radius: 4px;
   font-size: 14px;
 }
