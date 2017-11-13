@@ -2236,6 +2236,7 @@ margin-right: 6px;
 .content:not(.content-table) .stroke {
   position: absolute;
   top: 0;
+  left: 0;
   flex: inherit;
   width: 100%;
 }
