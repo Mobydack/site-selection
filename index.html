@@ -49,12 +49,12 @@
   <!-- /Yandex.Metrika counter -->
   <div class="top-wrapper">
     <div class="top">
-    <div class="open-modal-new" title="Выбрать сайт из моих сайтов">
+    <a class="open-modal-new" title="Выбрать сайт из моих сайтов" tabindex="1">
       <span>Мои сайты</span>
-    </div>
-    <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard">
     </a>
-    <a class="current-site" href="http://home-kitchen.ru">home-kitchen.ru
+    <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard" tabindex="2">
+    </a>
+    <a class="current-site" href="http://home-kitchen.ru" tabindex="3">home-kitchen.ru
     </a>
     </div>
   </div>
@@ -87,7 +87,7 @@
 	  <div class="sort-filter">
 		<div class="filter-select-wrapper">
       <span class="select-title">Показывать:</span>
-		  <select class="filter-select">
+		  <select class="filter-select" tabindex="3">
 			<option value="all">Все сайты</option>
 			<option value="published">Опубликованные</option>
 			<option value="unpublished">Неопубликованные</option>
@@ -96,8 +96,8 @@
 		  </select>
 		</div>
 		<div class="filter-select-wrapper">
-      <span class="select-title">Сортировать:</span>
-		  <select class="filter-select">
+      <span class="select-title" >Сортировать:</span>
+		  <select class="filter-select" tabindex="4">
 			<option value="new">Сначала новые</option>
 			<option value="old">Сначала старые</option>
 			<option value="a-z">По алфавиту А-Я</option>
@@ -106,8 +106,8 @@
 		</div>
 	  </div>
 	  <div class="view-select">
-		<div title="В виде карточек" class="view-select-cards"></div>
-		<div title="В виде таблицы" class="view-select-table"></div>
+		<a title="В виде карточек" class="view-select-cards" tabindex="5"></a>
+		<a title="В виде таблицы" class="view-select-table" tabindex="6"></a>
 	  </div>
 	</div>
 </header>
@@ -116,7 +116,7 @@
   <div class="content">
     <div class="stroke">
       <div class="tile create-new">
-        <a title="Создать новый сайт из тематического шаблона" class="zero-site" href="http://ukit.com/neowizard">
+        <a title="Создать новый сайт из тематического шаблона" class="zero-site" href="http://ukit.com/neowizard" tabindex="7">
           <img src="src/button-create.png" alt="">
           <span>Создать новый сайт</span>
         </a>
@@ -129,11 +129,11 @@
               </div>
           </div>
           <div class="ukit-alt-buttons">
-            <a title="Создать сайт из страницы на Facebook" href="https://ukit.com/ru/lp/convert" class="ukit-alt-buttons-fb2ukit">
+            <a title="Создать сайт из страницы на Facebook" href="https://ukit.com/ru/lp/convert" class="ukit-alt-buttons-fb2ukit" tabindex="8">
               <img src="src/btn-fb.png" alt="">
               <span>Создать сайт</span>
             </a>
-            <a title="Создать сайт из страницы во ВКонтакте" href="https://ukit.com/ru/lp/convert-vk" class="ukit-alt-buttons-vk2ukit">
+            <a title="Создать сайт из страницы во ВКонтакте" href="https://ukit.com/ru/lp/convert-vk" class="ukit-alt-buttons-vk2ukit" tabindex="9">
               <img src="src/btn-vk.png" alt="">
               <span>Создать сайт</span>
             </a>
@@ -141,10 +141,10 @@
         </div>
       </div>
 
-<!--       FIRST SITE -->
+<!--  -----------------------  FIRST SITE   ------------------------ -->
 
       <div class="tile">
-        <div class="preview first-site selected-site">
+        <a class="preview first-site selected-site" tabindex="10">
           <div class="preview-overlay">
               <div class="preview-overlay-primary">
                 <span class="preview-overlay-choose-button">Выбрать сайт</span>
@@ -152,19 +152,19 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span title="Сайт опубликован 28.8.2017" class="preview-overlay-publish-button  preview-overlay-disabled-button"></span>
+                  <span title="Сайт уже опубликован 28.8.2017" class="preview-overlay-publish-button  preview-overlay-disabled-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
           </div>
-        </div>
+        </a>
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
               <h2 contenteditable="true" class="premium-header">Студия домашней кухни</h2>
             </div>
-              <div class="info-site-data-wrapper">
-                <div class="info-site-url-publish-wrapper">
+            <div class="info-site-data-wrapper">
+              <div class="info-site-url-publish-wrapper">
                   <div title="Опубликован 28.8.2017" class="info-site-url">
                     <img src="src/img-published-icn.png">
                     <a class="published-domain-name" href="https://home-kitchen.ru">home-kitchen.ru</a>
@@ -172,7 +172,7 @@
                   <div class="info-site-publish">
                     <span class="info-text">Опубликован 28.8.2017</span>
                   </div>
-                </div>
+              </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
                 <div title="Оплаченный период тарифа «Премиум» закончится через 14 дней" class="info-site-tariff">
                   <img class="favico" src="src/img-premium.png">
@@ -184,15 +184,15 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span title="Сайт опубликован 28.8.2017" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-                    <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
-              </div>
+            </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span title="Сайт уже опубликован 28.8.2017" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+              <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -208,7 +208,7 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span  title="Сайт опубликован 10.9.2017" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+                  <span  title="Сайт уже опубликован 10.9.2017" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
@@ -241,15 +241,16 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span  title="Сайт опубликован 10.9.2017" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-                    <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
+
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+            <span  title="Сайт опубликован 10.9.2017" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+              <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -265,7 +266,7 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span  title="Сайт опубликован сегодня в 9:52" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+                  <span  title="Сайт уже опубликован сегодня в 9:52" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
@@ -298,15 +299,15 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span  title="Сайт опубликован сегодня в 9:52" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-                    <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+            <span  title="Сайт опубликован сегодня в 9:52" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+              <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -322,7 +323,7 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span  title="Сайт опубликован сегодня в 11:23" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+                  <span  title="Сайт уже опубликован сегодня в 11:23" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
@@ -331,7 +332,7 @@
         <div class="info">
           <div class="info-data">
             <div class="info-site-name">
-              <h2 contenteditable="true" class="premium-header">Сообщество hand-made мастеров Creators</h2 contenteditable="true">
+              <h2 contenteditable="true" class="header-notentered ">Введите заголовок</h2 contenteditable="true">
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
@@ -354,14 +355,14 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span  title="Сайт опубликован сегодня в 11:23" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+            <span  title="Сайт уже опубликован сегодня в 11:23" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -409,14 +410,14 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span  title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -432,7 +433,7 @@
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span  title="Сайт опубликован вчера в 14:20" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+                  <span  title="Сайт уже опубликован вчера в 14:20" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
                 </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
               </div>
@@ -464,14 +465,14 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span title="Сайт опубликован вчера в 14:20" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span title="Сайт уже опубликован вчера в 14:20" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -520,15 +521,15 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-                    <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+              <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -577,15 +578,15 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
-                    <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span title="Опубликовать сайт" class="preview-overlay-publish-button"></span>
+              <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -633,14 +634,14 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                  <span title="Сайт опубликован вчера в 9:22" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+            <span title="Сайт опубликован вчера в 9:22" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -690,15 +691,15 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span title="Пробный период закончился" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-                    <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span title="Пробный период закончился" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+              <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -710,12 +711,12 @@
           <div class="preview-overlay">
               <div class="preview-overlay-primary">
                 <span class="preview-overlay-choose-button">Выбрать сайт</span>
-                <span title="Оплатить тариф" class="preview-overlay-buy-button"><i></i>Оплатить тариф</span>
+                <span title="Написать в поддержку" class="preview-overlay-help-button"><i></i>Написать в поддержку</span>
               </div>
               <div class="preview-overlay-secondary">
                 <div class="preview-overlay-secondary-leftgroup">
                   <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span title="Пробный период закончился" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+                    <span title="Снят с публикации" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
 <!--                   <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span>
  -->                </div>
                 <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
@@ -729,16 +730,16 @@
             </div>
               <div class="info-site-data-wrapper">
                 <div class="info-site-url-publish-wrapper">
-                  <div title="Сайт не опубликован" class="info-site-url">
+                  <div title="Снят с публикации" class="info-site-url">
                     <img  src="src/img-unpublished-icn.png">
                     <a class="unpublished-domain-name" href="https://hairdresser.ru">hairdresser.ru</a>
                   </div>
                   <div class="info-site-publish">
-                    <span class="info-text">Не опубликован</span>
+                    <span class="info-text">Снят с публикации</span>
                   </div>
                 </div>
                 <div class="info-site-tariff-tariff-counter-wrapper">
-                <div title="Оплаченный период тарифа «Премиум» закончился" class="info-site-tariff">
+                <div title="Сайт заблокирован за нарушение прав" class="info-site-tariff">
 <!--                   <img class="favico" src="src/img-premium-red.png"> -->
                   <span class="info-site-tariff-name tariff-expired">Сайт заблокирован. <a href="">Помощь</a></span>
                 </div>
@@ -748,15 +749,15 @@
                   </span>
                 </div>
                 </div>
-                <div class="preview-overlay-secondary">
-                  <div class="preview-overlay-secondary-leftgroup">
-                    <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
-                    <span title="Пробный период закончился" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
-<!--                     <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
-                  </div>
-                  <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
-                </div>
               </div>
+          </div>
+          <div class="preview-overlay-secondary">
+            <div class="preview-overlay-secondary-leftgroup">
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span title="Сайт заблокирован" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
+<!--                     <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
+            </div>
+            <span title="Удалить сайт" class="preview-overlay-delete-button"></span>
           </div>
         </div>
       </div>
@@ -886,6 +887,8 @@
     $('.preview-overlay-edit-button').toggleClass('preview-overlay-edit-button-table');
     $('.preview-overlay-premium-button').toggleClass('preview-overlay-premium-button-table');
     $('.preview-overlay-publish-button').toggleClass('preview-overlay-publish-button-table');
+    $('.modal').toggleClass('modal-table');
+    $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
   })
 
   $('.view-select-table').click(function() {
@@ -907,8 +910,8 @@
     $('.preview-overlay-premium-button').toggleClass('preview-overlay-premium-button-table');
     $('.preview-overlay-publish-button').toggleClass('preview-overlay-publish-button-table');
     $('.modal').toggleClass('modal-table');
+    $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
   })
-
 
   $('.button-back').click(function() {
     $('.modal').toggleClass('active');
