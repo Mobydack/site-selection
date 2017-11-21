@@ -1216,7 +1216,7 @@ margin-right: 6px;
 }
 
 .ukit-alt-title-description:hover ~ .ukit-alt-title-tooltip {
-  display: block;/*kirill fix*/
+/*  display: block;kirill fix*/
   opacity: 1;
   pointer-events: auto;
   transition: 0.2s ease-in-out;
@@ -1334,12 +1334,16 @@ margin-right: 6px;
 .ukit-alt-title-tooltip {
   position: absolute;
   top: -57px;
-  display: none;/*kirill fix*/
+  pointer-events: none;
+/*  display: none;kirill fix*/
   opacity: 0;
 /*  width: 391px;
   height: 50px;
   border-bottom: 1px dotted black;*/
   transition: 0.2s ease-in-out;
+}
+.content-table .ukit-alt-title-tooltip {
+	top: -70px;
 }
 
 .ukit-alt-title-tooltiptext {
@@ -1949,7 +1953,7 @@ margin-right: 6px;
   flex: 0 1 auto;
   align-self: auto;
   margin-right: 36px;
-  max-width: 55%
+  flex-basis: 55%;
 }
 
 .info {
@@ -2247,6 +2251,9 @@ margin-right: 6px;
 @media screen
   and (min-width: 320px)
   and (max-width: 980px) {
+	  .modal-table {
+		  z-index: 0;
+	  }
     .content {
       padding-left: 0;
       padding-right: 0;
