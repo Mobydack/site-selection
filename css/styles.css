@@ -332,16 +332,56 @@ button {
 
 
 .close-modal {
-  background:url(../src/img-close-modal.png) no-repeat;
+  display: block;
+
   cursor:pointer;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   border: none;
-  position: absolute;
+  position: fixed;
   right: 20px;
-  top: 20px;
+  bottom: -24px;
   padding: 0px;
+  border-radius: 24px;
+
+  z-index: 3;
+
+  background-color: #122026;
+
+/*
+  background:url(../src/img-close-modal.png);
+  background-color: #122026;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: center;
+*/
+  transition: 0.1s ease-in-out; 
 }
+
+.close-cross {
+  position: relative;
+  top: 20px;
+  right: -12px;
+}
+
+.cross-firstpart, .cross-secondpart {
+  width: 23px;
+  height: 2px;
+  background-color: #4dae50;
+  position: relative;
+
+}
+
+.cross-firstpart {
+  transform: rotate(45deg);
+  top: 2px;
+}
+
+.cross-secondpart {
+  transform: rotate(-45deg);
+}
+
+
 
 .menu-text {
   font-family: avenir-regular;
