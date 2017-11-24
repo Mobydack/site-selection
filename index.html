@@ -941,6 +941,14 @@
       $('.menu').removeClass('active');
     }
   });
+
+  $('.tile-table').hover(function(e){
+      $(this).data("beginheight", $(this).height() + "px")
+      $(this).height(this.scrollHeight);
+  }, function() {
+    this.style.height = this.getAttribute('data-beginheight');
+  })
+    
   // if (!container.is(e.target) && container.has(e.target).length === 0)
   //   {
   //       container.hide();
