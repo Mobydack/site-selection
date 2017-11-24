@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -899,6 +900,9 @@
     $('.preview-overlay-publish-button').toggleClass('preview-overlay-publish-button-table');
     $('.modal').toggleClass('modal-table');
     $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
+    $('.tile').removeAttr("style");
+    $('.tile').removeData("beginheight");
+    $('.tile').unbind('mouseenter mouseleave');
   })
 
   $('.view-select-table').click(function() {
@@ -921,6 +925,14 @@
     $('.preview-overlay-publish-button').toggleClass('preview-overlay-publish-button-table');
     $('.modal').toggleClass('modal-table');
     $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
+    $(".tile-table:not(.tile-table.create-new-table)").each(function(i, elm){
+      $(this).attr("data-beginheight", $(this).height());
+    });
+    $('.tile-table:not(.create-new-table)').hover(function(e){
+      $(this).height(this.scrollHeight);
+    },function(){
+      $(this).height($(this).data("beginheight"));
+    });
   })
 
   $('.button-back').click(function() {
@@ -942,13 +954,6 @@
     }
   });
 
-  $('.tile-table').hover(function(e){
-      $(this).data("beginheight", $(this).height() + "px")
-      $(this).height(this.scrollHeight);
-  }, function() {
-    this.style.height = this.getAttribute('data-beginheight');
-  })
-    
   // if (!container.is(e.target) && container.has(e.target).length === 0)
   //   {
   //       container.hide();
