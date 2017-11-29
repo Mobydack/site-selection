@@ -704,7 +704,7 @@
                 </div>
               </div>
           </div>
-          <div class="preview-overlay-secondary">
+          <div class="preview-overlay-secondary info-expired">
             <div class="preview-overlay-secondary-leftgroup">
               <span title="Пробный период закончился" class="preview-overlay-publish-button preview-overlay-disabled-button">Оплатить тариф</span>
               <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i></span>
@@ -762,9 +762,10 @@
                 </div>
               </div>
           </div>
-          <div class="preview-overlay-secondary">
+          <div class="preview-overlay-secondary info-locked">
             <div class="preview-overlay-secondary-leftgroup">
-              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i>Редактировать</span>
+              <span title="Написать в поддержку" class="preview-overlay-help-button"><i></i>Написать в поддержку</span>
+              <span title="Перейти в конструктор сайта" class="preview-overlay-edit-button"><i></i></span>
               <span title="Сайт заблокирован" class="preview-overlay-publish-button preview-overlay-disabled-button"></span>
 <!--                     <span title="Выбрать тариф для сайта" class="preview-overlay-premium-button"></span> -->
             </div>
@@ -862,6 +863,7 @@
   </div> -->
 </div>
 <script>
+  let windowBol = false;
   $('.open-modal-new').click(function(event) {
     var $currentTarget=$(event.currentTarget);
     $currentTarget.toggleClass('selected');
@@ -881,59 +883,31 @@
   })
 
   $('.view-select-cards').click(function() {
-    $('.view-select-cards').toggleClass('view-select-cards-selected');
-    $('.view-select-table').toggleClass('view-select-table-selected');
-    $('.content').toggleClass('content-table');
-    $('.tile').toggleClass('tile-table');
-    $('.preview').toggleClass('preview-table');
-    $('.info').toggleClass('info-table');
-    $('.create-new').toggleClass('create-new-table');
-    $('.zero-site').toggleClass('zero-site-table');
-    $('.preview-overlay').toggleClass('preview-overlay-table');
-    $('.info-site-tariff-tariff-counter-wrapper').toggleClass('info-site-tariff-tariff-counter-wrapper-table');
-    $('.ukit-alt-buttons-vk2ukit').toggleClass('ukit-alt-buttons-vk2ukit-table');
-    $('.ukit-alt-buttons-fb2ukit').toggleClass('ukit-alt-buttons-fb2ukit-table');
-    $('.ukit-alt-title').toggleClass('ukit-alt-title-table');
-    $('.preview-overlay-delete-button').toggleClass('preview-overlay-delete-button-table');
-    $('.preview-overlay-edit-button').toggleClass('preview-overlay-edit-button-table');
-    $('.preview-overlay-premium-button').toggleClass('preview-overlay-premium-button-table');
-    $('.preview-overlay-publish-button').toggleClass('preview-overlay-publish-button-table');
-    $('.modal').toggleClass('modal-table');
-    $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
+    windowBol = false;
+    addClass();
     $('.tile').removeAttr("style");
     $('.tile').removeData("beginheight");
     $('.tile').unbind('mouseenter mouseleave');
   })
 
   $('.view-select-table').click(function() {
-    $('.view-select-cards').toggleClass('view-select-cards-selected');
-    $('.view-select-table').toggleClass('view-select-table-selected');
-    $('.content').toggleClass('content-table');
-    $('.tile').toggleClass('tile-table');
-    $('.preview').toggleClass('preview-table');
-    $('.info').toggleClass('info-table');
-    $('.create-new').toggleClass('create-new-table');
-    $('.zero-site').toggleClass('zero-site-table');
-    $('.preview-overlay').toggleClass('preview-overlay-table');
-    $('.info-site-tariff-tariff-counter-wrapper').toggleClass('info-site-tariff-tariff-counter-wrapper-table');
-    $('.ukit-alt-buttons-vk2ukit').toggleClass('ukit-alt-buttons-vk2ukit-table');
-    $('.ukit-alt-buttons-fb2ukit').toggleClass('ukit-alt-buttons-fb2ukit-table');
-    $('.ukit-alt-title').toggleClass('ukit-alt-title-table');
-    $('.preview-overlay-delete-button').toggleClass('preview-overlay-delete-button-table');
-    $('.preview-overlay-edit-button').toggleClass('preview-overlay-edit-button-table');
-    $('.preview-overlay-premium-button').toggleClass('preview-overlay-premium-button-table');
-    $('.preview-overlay-publish-button').toggleClass('preview-overlay-publish-button-table');
-    $('.modal').toggleClass('modal-table');
-    $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
-    $(".tile-table:not(.tile-table.create-new-table)").each(function(i, elm){
-      $(this).attr("data-beginheight", $(this).height());
-    });
-    $('.tile-table:not(.create-new-table)').hover(function(e){
-      $(this).height(this.scrollHeight);
-    },function(){
-      $(this).height($(this).data("beginheight"));
-    });
+    addClass();
+    tileTableHover();
   })
+  $(document).ready(function(){
+    if($('body').innerWidth() <= 992) {
+    windowBol = true;
+    addClass();
+    tileTableHover();
+  }
+  })
+  $(window).resize(function(){
+      if($('body').innerWidth() <= 992 && windowBol == false){
+          windowBol = true;
+          addClass();
+          tileTableHover();
+      }
+  });
 
   $('.button-back').click(function() {
     $('.modal').toggleClass('active');
@@ -958,7 +932,39 @@
   //   {
   //       container.hide();
   //   }
-
+    function addClass(){
+      $('.view-select-cards').toggleClass('view-select-cards-selected');
+      $('.view-select-table').toggleClass('view-select-table-selected');
+      $('.content').toggleClass('content-table');
+      $('.tile').toggleClass('tile-table');
+      $('.preview').toggleClass('preview-table');
+      $('.info').toggleClass('info-table');
+      $('.create-new').toggleClass('create-new-table');
+      $('.zero-site').toggleClass('zero-site-table');
+      $('.preview-overlay').toggleClass('preview-overlay-table');
+      $('.info-site-tariff-tariff-counter-wrapper').toggleClass('info-site-tariff-tariff-counter-wrapper-table');
+      $('.ukit-alt-buttons-vk2ukit').toggleClass('ukit-alt-buttons-vk2ukit-table');
+      $('.ukit-alt-buttons-fb2ukit').toggleClass('ukit-alt-buttons-fb2ukit-table');
+      $('.ukit-alt-title').toggleClass('ukit-alt-title-table');
+      $('.preview-overlay-delete-button').toggleClass('preview-overlay-delete-button-table');
+      $('.preview-overlay-edit-button').toggleClass('preview-overlay-edit-button-table');
+      $('.preview-overlay-premium-button').toggleClass('preview-overlay-premium-button-table');
+      $('.preview-overlay-publish-button').toggleClass('preview-overlay-publish-button-table');
+      $('.modal').toggleClass('modal-table');
+      $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
+    }
+    function tileTableHover (){
+         $(".tile-table:not(.tile-table.create-new-table)").each(function(i, elm){
+            $(this).attr("data-beginheight", $(this).height());
+            $(this).height($(this).data("beginheight"));
+          });
+          
+          $('.tile-table:not(.create-new-table)').hover(function(e){
+            $(this).height(this.scrollHeight);
+          },function(){
+            $(this).height($(this).data("beginheight"));
+          });
+    }
 </script>
 
 </body>
