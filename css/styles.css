@@ -1257,17 +1257,18 @@ margin-right: 6px;
 
 }
 
-.ukit-alt-title-description:hover ~ .ukit-alt-title-tooltip {
+/* .ukit-alt-title-description:hover ~ .ukit-alt-title-tooltip { */
 /*  display: block;kirill fix*/
-  opacity: 1;
+.ukit-alt-title-tooltip {
+  opacity: 0;
   pointer-events: auto;
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .ukit-alt-title img:hover ~ .ukit-alt-title-tooltip {
   opacity: 1;
   pointer-events: auto;
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .selected {
@@ -1376,16 +1377,17 @@ margin-right: 6px;
 .ukit-alt-title-tooltip {
   position: absolute;
   top: -57px;
+  z-index: 4;
   pointer-events: none;
 /*  display: none;kirill fix*/
   opacity: 0;
 /*  width: 391px;
   height: 50px;
   border-bottom: 1px dotted black;*/
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 .content-table .ukit-alt-title-tooltip {
-	top: -70px;
+  top: -70px;
 }
 
 .ukit-alt-title-tooltiptext {

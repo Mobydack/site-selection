@@ -135,9 +135,9 @@
           <div class="ukit-alt-title">
               <span class="ukit-alt-title-description" title="Данные копируются из страницы, из них создается сайт.  Это бесплатно и безопасно для вашей страницы в соцсети" >Сайт из готовой страницы в соцсети</span>
               <img src="src/img-question-mark.png">
-              <div class="ukit-alt-title-tooltip">
+              <!-- <div class="ukit-alt-title-tooltip">
                 <span class="ukit-alt-title-tooltiptext">Данные копируются из страницы, из них создается сайт.<br>Это бесплатно для вашей страницы в соцсети</span>
-              </div>
+              </div> --> 
           </div>
           <div class="ukit-alt-buttons">
             <a title="Создать сайт из страницы на Facebook" href="https://ukit.com/ru/lp/convert" class="ukit-alt-buttons-fb2ukit" tabindex="8">
@@ -776,7 +776,6 @@
     </div>
   </div>
 
-
 <!--
   <h1>Если сайт один</h1>
   <div class="content">
@@ -862,6 +861,9 @@
     </div>
   </div> -->
 </div>
+<div class="ukit-alt-title-tooltip">
+  <span class="ukit-alt-title-tooltiptext">Данные копируются из страницы, из них создается сайт.<br>Это бесплатно для вашей страницы в соцсети</span>
+</div>
 <script>
   let windowBol = false;
   $('.open-modal-new').click(function(event) {
@@ -896,23 +898,43 @@
   })
   $(document).ready(function(){
     if($('body').innerWidth() <= 992) {
-    windowBol = true;
-    addClass();
-    tileTableHover();
-  }
+    // windowBol = true;
+    // addClass();
+    // tileTableHover();
+    }
   })
   $(window).resize(function(){
-      if($('body').innerWidth() <= 992 && windowBol == false){
-          windowBol = true;
+      if($('body').innerWidth() <= 768 && $(".tile").hasClass('tile-table')){
+          // windowBol = true;
           addClass();
-          tileTableHover();
+          $('.tile').removeAttr("style");
+          $('.tile').removeData("beginheight");
+          $('.tile').unbind('mouseenter mouseleave');
+          // tileTableHover();
+
       }
+      // else if($('body').innerWidth() > 992 && windowBol == true){
+      //   $('.tile').removeAttr("style");
+      //   $('.tile').removeData("beginheight");
+      //   $('.tile').unbind('mouseenter mouseleave');
+      // }
   });
 
   $('.button-back').click(function() {
     $('.modal').toggleClass('active');
     $('header').toggleClass('active');
   })
+  //ukit-alt-tile-tooltip:hover
+  $('.ukit-alt-title').hover(function(){
+    let offset = $(this).offset(),
+        topMargin = 20,
+        leftMargin = 0;
+    $('.ukit-alt-title-tooltip').css('opacity', '1');
+    $('.ukit-alt-title-tooltip').offset({top: offset.top - $('.ukit-alt-title-tooltip').height() - topMargin, left: offset.left - $(this).width() / 3 + leftMargin});
+    console.log($(this).offset());
+  }, function(){
+    $('.ukit-alt-title-tooltip').css('opacity', '0');
+  });
 
 //  $('.ukit-alt-title').hover(function() {
 //    $(this).siblings('.ukit-alt-title-tooltip').toggleClass('active')
@@ -932,7 +954,7 @@
   //   {
   //       container.hide();
   //   }
-    function addClass(){
+    function addClass(){ // функция сменны класса
       $('.view-select-cards').toggleClass('view-select-cards-selected');
       $('.view-select-table').toggleClass('view-select-table-selected');
       $('.content').toggleClass('content-table');
@@ -953,7 +975,7 @@
       $('.modal').toggleClass('modal-table');
       $('.preview-overlay-disabled-button').toggleClass('preview-overlay-disabled-button-table');
     }
-    function tileTableHover (){
+    function tileTableHover (){ //функция ховера для .tile-table
          $(".tile-table:not(.tile-table.create-new-table)").each(function(i, elm){
             $(this).attr("data-beginheight", $(this).height());
             $(this).height($(this).data("beginheight"));
