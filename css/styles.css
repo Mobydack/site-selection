@@ -1,4 +1,15 @@
 @font-face {
+  font-family: 'ukit';
+  src: url('../fonts/ukit.eot?hkumea');
+  src: url('../fonts/ukit.eot?hkumea#iefix') format('embedded-opentype'),
+    url('../fonts/ukit.ttf?hkumea') format('truetype'),
+    url('../fonts/ukit.woff?hkumea') format('woff'),
+    url('../fonts/ukit.svg?hkumea#ukit') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: avenir-bold;
   src: url(../fonts/AvenirNextCyr-Bold.otf); /* Путь к файлу со шрифтом */
  }
@@ -50,6 +61,28 @@ body {
   box-sizing: border-box;
 }
 
+.top-profile-sign-out {
+  font-size: 16px;
+  color: #3B7694;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  font-family: 'ukit' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-profile-sign-out:before {
+content: "\e620";
+}
+
 .modal {
   opacity: 0;
   pointer-events: none;
@@ -74,27 +107,56 @@ body {
 
 .top-logo {
   float: left;
-  margin-top: 17px;
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 248px;
 }
 
 
 .top-logo img{
   height: 30px;
   margin-top: -4px;
+  margin-right: 12px;
+
+}
+
+.top-profile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: center;
+
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
 }
 
 .top-profile-user {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-end;
+    align-content: flex-start;
+    align-items: center;
     text-decoration: none;
     transition-property: color;
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.top-profile-notifications {
+    position: relative;
+    margin-left: 22px;
+    margin-right: 0px;
+    cursor: pointer;
+    top: 2px;
+}
+
+.top-profile-sign-out {
+    margin-left: 22px;
+    cursor: pointer;
 }
 
 .top-profile-user-avatar {
@@ -127,9 +189,7 @@ body {
   font-size: 14px;
   color: #8DA8B8;
   letter-spacing: 0;
-  position: relative;
-  top: 13px;
-  left: 142px;
+  margin-right: 12px;
   text-decoration: none;
 }
 
@@ -181,7 +241,7 @@ header {
   border: none;
   background-color: #1D2A33;
 
-  padding: 0 24px;
+/*  padding: 0 24px;*/
 
   display: flex;
   flex-direction: row;
@@ -210,7 +270,7 @@ header.active {
   width: 960px;
   background-color: #1D2A33;
 
-  padding: 0 12px;
+  padding: 0 16px;
 
   display: flex;
   flex-direction: row;
@@ -316,15 +376,24 @@ button {
 }
 
 .top {
-  order: 0;
-  flex: 0 1 auto;
-  align-self: center;
-  background: url(../src/topbar.png);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  padding-right: 16px;
+  padding-left: 16px;
+
+/*  background: url(../src/topbar.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  width: 960px;
+  background-repeat: no-repeat;*/
+
+  max-width: 960px;
   height: 61px;
+
   margin: auto;
+
   box-sizing: border-box;
 }
 
@@ -354,7 +423,7 @@ button {
       font-weight: normal;
       height: 36px;
       line-height: 33px;
-      margin: 0;
+      margin-right: 6px;
       outline: none;
       padding: 2px 18px 2px;
       text-align: center;
@@ -374,9 +443,6 @@ button {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
-      position: relative;
-      left: 140px;
-      top: 12px;
 }
 
 
@@ -487,7 +553,6 @@ button:focus {outline:0;}
   font-weight: normal;
   height: 36px;
   line-height: 33px;
-  margin: 0 6px;
   outline: none;
   padding: 2px 18px 2px;
   text-align: center;
@@ -508,8 +573,7 @@ button:focus {outline:0;}
   -ms-user-select: none;
   user-select: none;
   position: relative;
-  left: 136px;
-  top: 12px;
+  margin-right: 12px;
 }
 
 .create-new-site::before {
@@ -1144,7 +1208,7 @@ margin-right: 6px;
   overflow: hidden;
 
   width: 150px;
-  margin: 20px;
+  margin: 16px;
   /*height: 150px;*/
   min-width: 450px;
   max-width: 550px;
@@ -2372,6 +2436,15 @@ margin-right: 6px;
       padding-left: 0;
       padding-right: 0;
     }
+
+    .row-content {
+      padding: 0 16px;
+    }
+
+    .top {
+      padding: 0 16px;
+    }
+
     .tile {
       min-width: 380px;
       max-width: 500px;
@@ -2407,6 +2480,10 @@ margin-right: 6px;
 	  .modal-table {
 		  z-index: 0;
 	  }
+
+
+
+
     .content {
       padding-left: 0;
       padding-right: 0;
@@ -2657,5 +2734,12 @@ margin-right: 6px;
 @media (max-width: 768px) {
   .view-select-cards, .view-select-table {
     display: none;
+  }
+
+  .top-profile-user-name {
+    display: none;
+  }
+  .top-profile-notifications {
+    margin-left: 12px; 
   }
 }
