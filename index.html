@@ -48,22 +48,56 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/46321338" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
+
+
+
+
+
+
+
+<!-- TOPBAR -->
+
+
+
+
+
   <div class="top-wrapper">
     <div class="top">
+    <div class="top-logo">
+        <a href="/sites/url/gp5ycaq96/dashBoard" class="d-logo">
+            <img src="src/logo.svg">
+        </a>
+    </div>
+
     <a class="open-modal-new" title="Выбрать сайт из моих сайтов" tabindex="1">
       <span>Мои сайты</span>
     </a>
     <a class="create-new-site" title="Создать новый сайт" href="http://ukit.com/neowizard" tabindex="2">
     </a>
-    <a class="current-site" href="http://home-kitchen.ru" tabindex="3">home-kitchen.ru
-    </a>
+    <a class="current-site" href="http://home-kitchen.ru" tabindex="3">
+
+    <div class="top-profile">
+      <a class="top-profile-sign-out" title="Выйти">
+      </a>
+      <span class="top-profile-notifications" title="Уведомления">
+      </span>
+      <a href="/sites/url/gp5ycaq96/dashBoard/profile" class="top-profile-user">
+        <img class="top-profile-user-avatar" src="src/avatar.jpeg">
+        </img>
+        <span class="top-profile-user-name">
+          Артём Жигалин
+        </span>
+      </a>
+    </div>
+
     </div>
   </div>
   <div class="dash">
 
     <div class="bg">
       <div class="bg-header-main">
-      </div>
+home-kitchen.ru
+    </a>      </div>
       <div class="bg-banner">
       </div>
       <div class="bg-content">
@@ -83,6 +117,18 @@
       </div>
 
     </div>
+
+
+
+
+
+
+
+<!-- HEADER -->
+
+
+
+
 <header>
 	<div class="row-content">
 	  <div class="sort-filter">
@@ -132,21 +178,16 @@
           <span>Создать новый сайт</span>
         </a>
         <div class="ukit-alt">
-          <div class="ukit-alt-title">
-              <span class="ukit-alt-title-description" title="Данные копируются из страницы, из них создается сайт.  Это бесплатно и безопасно для вашей страницы в соцсети" >Сайт из готовой страницы в соцсети</span>
-              <img src="src/img-question-mark.png">
-              <!-- <div class="ukit-alt-title-tooltip">
-                <span class="ukit-alt-title-tooltiptext">Данные копируются из страницы, из них создается сайт.<br>Это бесплатно для вашей страницы в соцсети</span>
-              </div> --> 
-          </div>
           <div class="ukit-alt-buttons">
             <a title="Создать сайт из страницы на Facebook" href="https://ukit.com/ru/lp/convert" class="ukit-alt-buttons-fb2ukit" tabindex="8">
+              <img src="src/img-question-mark.png" class="ukit-alt-title-img">
               <img src="src/btn-fb.png" alt="">
-              <span>Создать сайт</span>
+              <span>Создать сайт<br> из страницы Facebook</span>
             </a>
             <a title="Создать сайт из страницы во ВКонтакте" href="https://ukit.com/ru/lp/convert-vk" class="ukit-alt-buttons-vk2ukit" tabindex="9">
+              <img src="src/img-question-mark.png" class="ukit-alt-title-img">
               <img src="src/btn-vk.png" alt="">
-              <span>Создать сайт</span>
+              <span>Создать сайт<br> из паблика VK</span>
             </a>
           </div>
         </div>
@@ -923,7 +964,7 @@
     $('header').toggleClass('active');
   })
   //ukit-alt-tile-tooltip:hover
-  $('.ukit-alt-title').hover(function(){
+  $('.ukit-alt-title-img').hover(function(){
     let offset = $(this).offset(),
         topMargin = 20,
         leftMargin = 0;
