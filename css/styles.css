@@ -967,10 +967,12 @@ margin-right: 6px;
 
 }
 
-.info-site-name > h2 {
+.info-site-name > h2, .info-site-name > input {
   font-family: avenir-medium;
+  font-weight: bold;
   font-size: 18px;
   color: #3A3D41;
+  border: none;
 /*  letter-spacing: 0.4px;*/
   line-height: 24px;
   display: inline-block;
@@ -1257,17 +1259,18 @@ margin-right: 6px;
 
 }
 
-.ukit-alt-title-description:hover ~ .ukit-alt-title-tooltip {
+/* .ukit-alt-title-description:hover ~ .ukit-alt-title-tooltip { */
 /*  display: block;kirill fix*/
-  opacity: 1;
+.ukit-alt-title-tooltip {
+  opacity: 0;
   pointer-events: auto;
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .ukit-alt-title img:hover ~ .ukit-alt-title-tooltip {
   opacity: 1;
   pointer-events: auto;
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .selected {
@@ -1376,16 +1379,17 @@ margin-right: 6px;
 .ukit-alt-title-tooltip {
   position: absolute;
   top: -57px;
+  z-index: 4;
   pointer-events: none;
 /*  display: none;kirill fix*/
   opacity: 0;
 /*  width: 391px;
   height: 50px;
   border-bottom: 1px dotted black;*/
-  transition: 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 .content-table .ukit-alt-title-tooltip {
-	top: -70px;
+  top: -70px;
 }
 
 .ukit-alt-title-tooltiptext {
@@ -2382,23 +2386,26 @@ margin-right: 6px;
   display: none;
 }
 .content-table .tile-table:hover .info-table .preview-overlay-secondary {
+  display: flex;
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
   display: flex;
   align-items: center;
-  bottom: 8px;
-  position: relative;
-  margin-left: 0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -18px;
+  /* margin-left: 0;
   margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
 }
 
 .content-table .info-table:focus .preview-overlay-secondary {
-  display: flex;
+  /* display: flex;
   align-items: center;
   bottom: 8px;
-  position: relative;
+  position: relative; */
 }
 
 .tile-table .info-site-data-wrapper {
@@ -2530,6 +2537,9 @@ margin-right: 6px;
 }
 .info-table .info-locked .preview-overlay-edit-button-table i {
   margin: 0;
+}
+.info-table {
+  position: relative;
 }
 @media (max-width: 992px) {
   .view-select-cards, .view-select-table {
