@@ -109,7 +109,7 @@ content: "\e620";
   float: left;
   position: relative;
   min-height: 1px;
-  width: 248px;
+  width: 230px;
 }
 
 
@@ -191,6 +191,11 @@ content: "\e620";
   letter-spacing: 0;
   margin-right: 12px;
   text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  width: 25%;
 }
 
 .current-site:hover {
@@ -2743,6 +2748,29 @@ margin-right: 6px;
     display: none;
   }
   .top-profile-notifications {
+    margin-left: 12px; 
+  }
+}
+
+
+
+/* 0 --- MEDIA --- 540 */
+
+@media (max-width: 540px) {
+  .create-new-site, .top-profile-notifications, .select-title, .select-title {
+    display: none;
+  }
+
+  .filter-select {
+    height: 48px;
+    align-items: center;
+  }
+
+  .open-modal-new {
+    margin-right: 12px; 
+  }
+
+  .top-profile-sign-out {
     margin-left: 12px; 
   }
 }
