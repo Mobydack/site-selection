@@ -113,7 +113,7 @@ content: "\e620";
 }
 
 
-.top-logo img{
+.top-logo svg{
   height: 30px;
   margin-top: -4px;
   margin-right: 12px;
@@ -658,6 +658,9 @@ button:focus {outline:0;}
   align-content: center;
   align-items: center;
   margin-top: 24px;
+
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 48px;
 }
 
@@ -1210,7 +1213,7 @@ margin-right: 6px;
   width: 150px;
   margin: 16px;
   /*height: 150px;*/
-  min-width: 450px;
+  min-width: 380px;
   max-width: 550px;
   /*min-height: 400px;
   max-height: 600px;*/
