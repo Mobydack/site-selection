@@ -543,7 +543,7 @@ button:focus {outline:0;}
   box-shadow: 0 0px 7px 0 rgb(51, 143, 255);
 }*/
 
-.open-modal-new:hover, .open-modal-new:focus {
+.open-modal-new:hover, /*.open-modal-new:focus*/ {
   background: #2B404F;
 }
 
@@ -1410,7 +1410,7 @@ margin-right: 6px;
   background-color: #09181f;
 }
 
-.selected:hover, .selected:focus {
+.selected:hover, /*.selected:focus*/ {
   background-color: #0d1c23;
 }
 
